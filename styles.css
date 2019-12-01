@@ -1,0 +1,79 @@
+@charset "utf-8"
+.box1{
+
+}
+.header1{
+  color: blue;
+ border: inherit;
+  font-size: 25px;
+  font-family: Arial,メイリオ, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  width: 300px;
+  height: 300px;
+}
+.body1{
+  background-color: pink;
+}
+.section1{
+  text-align: center;
+  list-style: none inside;
+  display: block;
+  margin: 0 auto;
+  padding-left: 0%;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+.section2{
+  text-align: left;
+  list-style: circle inside;
+  padding-left: 45%;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.relative{
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+}
+.absoluteAED1{
+  position: absolute;
+  top: 370px;
+  right: 4px;
+}
+.absoluteAFslope{
+  position: absolute;
+  top: 240px;
+  right: 1px;
+  transform: rotate(-90deg);
+}
+.absoluteCSslope{
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+}
+.popup{
+  box-shadow: 0 0 0 9999px rgba(0,0,0,.8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70vw;
+  height: 55vw;
+  overflow-y: scroll;
+}
+#pop-on{
+  display: none;
+}
+#popup-on:checked + .popup{
+display: block;
+}
+.footer1{
+  text-decoration: none;
+}
