@@ -8,10 +8,11 @@
   text-align: center;
   font-weight: normal;
   width: 300px;
-  height: 300px;
+  height: auto;
 }
 .body1{
   background-color: pink;
+  margin: auto;
 }
 .section1{
   text-align: center;
@@ -37,6 +38,8 @@
   width: 600px;
   margin: 0 auto;
 }
+
+
 .relativeDE{
   position: relative;
   width: 400px;
@@ -120,6 +123,7 @@
   right: 180px;
 }
 
+
 .absoluteTB1_1{
   position: absolute;
   bottom: 207px;
@@ -186,7 +190,7 @@
   right: 99px;
 }
 
-
+/* スロープ */
 .absoluteAFslope{
   position: absolute;
   top: 240px;
@@ -251,56 +255,77 @@
 }
 
 
+/* 全体設定 */
+* {
+  box-sizing: border-box;
+  }
 
+/* ポップアップウインドウの設定 */
 .popup {
+  background-color: #efefef;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
   position: fixed;
-  left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
-  transition: .6s;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70vw;
+  height: 55vw;
+  overflow-y: scroll;
+  z-index: 9998;
 }
-.popup.is-show {
-  opacity: 1;
-  visibility: visible;
+/* チェックボックスの初期設定 */
+#popup-on{
+  display: none;
 }
-.popup-inner {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  width: 80%;
-  max-width: 600px;
-  padding: 50px;
-  background-color: #fff;
-  z-index: 2;
+/* チェックされたらポップアップウインドウを開く */
+#popup-on:checked + .popup{
+  display: block;
 }
-.popup-inner img {
-  width: 100%;
-}
-.close-btn {
+
+/* 閉じるアイコン（右上） */
+.icon-close{
+  background: #000;
+  color: #fff;
+  font-size: 30px;
+  padding: 0 10px;
   position: absolute;
   right: 0;
-  top: 0;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+}
+
+/* 閉じるボタン */
+.btn-close{
+  background: #000;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 95%;
   text-align: center;
-  cursor: pointer;
 }
-.close-btn i {
-  font-size: 20px;
-  color: #333;
-}
-.black-background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,.8);
-  z-index: 1;
+
+/* 開くボタン */
+.btn-open{
+  background: #fff;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0px;
   cursor: pointer;
+  margin: 0px ;
+  width: 95%;
+  text-align: center;
+}
+
+/* ポップアップの内容 */
+.popup-content{
+  margin: 30px auto 30px auto;
+  width: 90%;
+}
+
+/* ポップアップの文字 */
+.popup-p{
+  margin: auto;
+}

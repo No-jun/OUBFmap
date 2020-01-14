@@ -12,14 +12,6 @@
       <h1>一般教育棟</h1>
     </header>
 
-    <div class="popup" id="js-popup">
-      <div class="popup-inner">
-        <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
-        <a href="#"><img src="img/icon/Aele.JPG" alt="ポップアップ画像"></a>
-      </div>
-      <div class="black-background" id="js-black-bg"></div>
-    </div>
-
     <ul class="section2">
       <h2>エリア</h2>
       <li><a href="#blockABC1">A,B,C棟1F</a></li>
@@ -36,11 +28,27 @@
 
     <section class="section1">
         <h1 id="blockABC1">A,B,C棟1F</h1>
-        <h3>A,B,C棟1Fのマップ</h3>
         <div class="relativeABC">
           <img src="img/pankyo/pankyofloor1.png" width="600" height="500" alt="1Fマップの画像です">
           <img src="img/icon/AED.png" width="25" height="20" alt="AED" class="absoluteAED1">
-          <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELA1">
+
+          <div class="pop-box">
+            <label for="popup-on"><label for="popup-on"><div class="btn-open">
+              <!-- 画像 -->
+              <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELA1"></div></label>
+            <input type="checkbox" id="popup-on">
+            <div class="popup">
+              <label for="popup-on" class="icon-close">×</label>
+              <div class="popup-content">
+                <!-- ポップアップの中身 -->
+                <p class="popup-p">一般教育棟のエレベーター</p><br>鏡あり<br>
+                <img src="img/pankyo/Aele.JPG" width="600" height="450" alt="一般教育棟A棟のエレベーター">
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+              <label for="popup-on"><div class="btn-close">閉じる</div></label>
+            </div>
+          </div>
+
           <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELB1">
           <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB1_1">
           <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB1_2">
@@ -56,7 +64,6 @@
     
     <section class="section1">
       <h1 id="blockABC2">A,B,C棟2F</h1>
-      <h3>A,B,C棟2Fのマップ</h3>
       <div class="relativeABC">
         <img src="img/pankyo/pankyofloor2.png" width="600" height="500" alt="2Fマップの画像です">
         <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELA2">
@@ -68,7 +75,6 @@
 
     <section class="section1">
       <h1 id="blockABC3">A,B,C棟3F</h1>
-      <h3>A,B,C棟3Fのマップ</h3>
       <div class="relativeABC">
         <img src="img/pankyo/pankyofloor3.png" width="600" height="500" alt="3Fマップの画像です">
       <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELA3">
@@ -80,7 +86,6 @@
 
     <section class="section1">
       <h1 id="blockABC4">A,B,C棟4F</h1>
-      <h3>A,B,C棟4Fのマップ</h3>
       <div class="relativeABC">
         <img src="img/pankyo/pankyofloor4.png" width="600" height="500" alt="4Fマップの画像です">
         <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELA4">
@@ -92,7 +97,6 @@
 
     <section class="section1">
       <h1 id="blockDE1">D,E棟1F</h1>
-      <h3>D,E棟1Fのマップ</h3>
       <div class="relativeDE">
         <img src="img/pankyo/pankyofloorDE1.png" width="400" height="543" alt="1Fマップの画像です">
         <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELD1">
@@ -107,7 +111,6 @@
   
   <section class="section1">
     <h1 id="blockDE2">D,E棟2F</h1>
-    <h3>D,E棟2Fのマップ</h3>
     <div class="relativeDE">
       <img src="img/pankyo/pankyofloorDE2.png" width="400" height="578" alt="2Fマップの画像です">
       <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELD2">
@@ -117,7 +120,6 @@
 
     <section class="section1">
       <h1 id="blockDE3">D,E棟3F</h1>
-      <h3>D,E棟3Fのマップ</h3>
       <div class="relativeDE">
         <img src="img/pankyo/pankyofloorDE3.png" width="400" height="560" alt="3Fマップの画像です">
         <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELD3">
@@ -127,7 +129,6 @@
 
     <section class="section1">
       <h1 id="blockDE4">D,E棟4F</h1>
-      <h3>D,E棟4Fのマップ</h3>
       <div class="relativeDE">
         <img src="img/pankyo/pankyofloorDE4.png" width="400" height="560" alt="4Fマップの画像です">
         <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELD4">
@@ -137,7 +138,6 @@
 
     <section class="section1">
       <h1 id="blockDE5">D,E棟5F</h1>
-      <h3>D,E棟5Fのマップ</h3>
       <div class="relativeDE">
         <img src="img/pankyo/pankyofloorDE5.png" width="400" height="370" alt="5Fマップの画像です">
         <img src="img/icon/elevator.png" width="40" height="40" alt="エレベーター" class="absoluteELD5">
@@ -146,7 +146,6 @@
 
     <section class="section1">
       <h1 id="blockDE6">D,E棟6F</h1>
-      <h3>D,E棟6Fのマップ</h3>
       <div class="relativeDE">
         <img src="img/pankyo/pankyofloorDE6.png" width="400" height="440" alt="6Fマップの画像です">
         <img src="img/icon/elevator.png" width="40" height="40" alt="エレベーター" class="absoluteELD6">
