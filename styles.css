@@ -21,7 +21,7 @@
   margin: 0 auto;
   padding-left: 0%;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: none;
 }
 .section2{
@@ -32,12 +32,22 @@
   font-weight: bold;
   text-decoration: none;
 }
+.section3{
+  text-align: left;
+  list-style: circle inside;
+  padding-left: 42%;
+  font-size: 20px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
 /* 一般教育棟ABC棟 */
 .relativeABC{
   position: relative;
   width: 600px;
   margin: 0 auto;
 }
+
 /* ABC1F */
 .absoluteAED1{
   position: absolute;
@@ -49,6 +59,13 @@
   top: 205px;
   right: 40px;
 }
+#popup-on{
+  display: none;
+}
+#popup-on:checked + .popup{
+  display: block;
+}
+
 .absoluteELB1{
   position: absolute;
   top: 180px;
