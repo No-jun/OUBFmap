@@ -1,283 +1,75 @@
 @charset "utf-8";
 
+html{
+  background-color: pink;
+  font-family: 'UD デジタル 教科書体 NP-B',Arial,'Droid Sans','メイリオ', Helvetica, sans-serif;
+
+}
 .header1{
-  color: blue;
- border: inherit;
+  color: #000;
+  border: inherit;
   font-size: 25px;
-  font-family: Arial,メイリオ, Helvetica, sans-serif;
   text-align: center;
   font-weight: normal;
-  width: 300px;
+  width: auto;
   height: auto;
+  padding: 10px 0 0;
 }
 .body1{
-  background-color: pink;
-  margin: auto;
+  background-color: #f0f0f0f8;
+  width: auto;
+  margin: 3% 10%;
+  border-radius: 50px;
 }
 .section1{
   text-align: center;
-  list-style: none inside;
+  list-style: none;
   display: block;
-  margin: 0 auto;
-  padding-left: 0%;
+  margin: 10 auto;
+  padding-left: auto;
   font-size: 20px;
   font-weight: normal;
   text-decoration: none;
-}
-.section2{
-  text-align: left;
-  list-style: circle inside;
-  padding-left: 45%;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
+
 }
 .section3{
-  text-align: left;
-  list-style: circle inside;
-  padding-left: 42%;
+  text-align: center;
+  display: inline-block;
   font-size: 20px;
   font-weight: normal;
-  text-decoration: none;
 }
 
-/* 一般教育棟ABC棟 */
-.relativeABC{
-  position: relative;
-  width: 600px;
-  margin: 0 auto;
+ul{
+  padding: 0%;
+  list-style: none;
 }
-
-/* ABC1F */
-.absoluteAED1{
-  position: absolute;
-  top: 370px;
-  right: 4px;
+li{
+  margin-bottom: 20px;
 }
-.absoluteELA1{
-  position: absolute;
-  top: 205px;
-  right: 40px;
+.link_button{
+  text-decoration: none;/*下線消す*/
+  background: rgb(0, 192, 240);/*背景を水色に*/
+  color:#fff;/*文字を白に*/
+  padding:5px 10px;/*内側の余白*/
+  border-radius: 20px;/*角を丸くする*/
 }
-#popup-on{
-  display: none;
-}
-#popup-on:checked + .popup{
-  display: block;
-}
-
-.absoluteELB1{
-  position: absolute;
-  top: 180px;
-  left: 105px;
-}
-.absoluteTB1_1{
-  position: absolute;
-  bottom: 207px;
-  right: 260px;
-}
-.absoluteTB1_2{
-  position: absolute;
-  bottom: 180px;
-  right: 260px;
-}
-.absoluteTC1{
-  position: absolute;
-  bottom: 180px;
-  left: 35px;
-}
-.absoluteAFslope{
-  position: absolute;
-  top: 240px;
-  right: 0px;
-  transform: rotate(-90deg);
-}
-.absoluteANslope{
-  position: absolute;
-  top: 185px;
-  right: 52px;
-  transform: rotate(180deg);
-}
-.absoluteBNslope{
-  position: absolute;
-  top: 188px;
-  right: 235px;
-  transform: rotate(180deg);
-}
-.absoluteCNslope{
-  position: absolute;
-  top: 150px;
-  left: 80px;
-  transform: rotate(-90deg);
-}
-.absoluteCSslope{
-  position: absolute;
-  bottom: 30px;
-  left: 40px;
-}
-.absoluteCFslope{
-  position: absolute;
-  bottom: 240px;
-  left: 5px;
-  transform: rotate(90deg);
-}
-/* ABC2F */
-.absoluteELA2{
-  position: absolute;
-  top: 195px;
-  right: 32px;
-}
-.absoluteELB2{
-  position: absolute;
-  top: 182px;
-  left: 80px;
-}
-.absoluteTB2_1{
-  position: absolute;
-  bottom: 205px;
-  right: 265px;
-}
-.absoluteTB2_2{
-  position: absolute;
-  bottom: 180px;
-  right: 265px;
-}
-/* ABC3F */
-.absoluteELA3{
-  position: absolute;
-  top: 210px;
-  right: 32px;
-}
-.absoluteELB3{
-  position: absolute;
-  top: 193px;
-  left: 80px;
-}
-.absoluteTB3_1{
-  position: absolute;
-  bottom: 205px;
-  right: 260px;
-}
-.absoluteTB3_2{
-  position: absolute;
-  bottom: 181px;
-  right: 260px;
-}
-/* ABC4F */
-.absoluteELA4{
-  position: absolute;
-  top: 205px;
-  right: 32px;
-}
-.absoluteELB4{
-  position: absolute;
-  top: 193px;
-  left: 80px;
-}
-.absoluteTB4_1{
-  position: absolute;
-  bottom: 202px;
-  right: 265px;
-}
-.absoluteTB4_2{
-  position: absolute;
-  bottom: 178px;
-  right: 265px;
+.link_button:hover {
+  background: silver;
+  text-decoration: none;/*下線を消す*/
 }
 
 
-/* 一般教育棟DE棟 */
-.relativeDE{
-  position: relative;
-  width: 400px;
-  margin: 0 auto;
-}
-/* DE1F */
-.absoluteELD1{
-  position: absolute;
-  top: 130px;
-  right: 75px;
-}
-.absoluteTD1{
-  position: absolute;
-  bottom: 160px;
-  right: 91px;
-}
-.absoluteDNslope{
-  position: absolute;
-  top: 130px;
-  right: 0px;
-  transform: rotate(-90deg);
-}
-.absoluteDFslope{
-  position: absolute;
-  bottom: 115px;
-  right: 35px;
-  transform: rotate(-90deg);
-}
-.absoluteENslope{
-  position: absolute;
-  bottom: 145px;
-  right: 147px;
-  transform: rotate(180deg);
-}
-.absoluteESslope{
-  position: absolute;
-  bottom: 65px;
-  right: 147px;
-}
-/* DE2F */
-.absoluteELD2{
-  position: absolute;
-  top: 138px;
-  right: 75px;
-}
-.absoluteTD2{
-  position: absolute;
-  bottom: 170px;
-  right: 92px;
-}
-/* DE3F */
-.absoluteELD3{
-  position: absolute;
-  top: 142px;
-  right: 85px;
-}
-.absoluteTD3{
-  position: absolute;
-  bottom: 166px;
-  right: 100px;
-}
-/* DE4F */
-.absoluteELD4{
-  position: absolute;
-  top: 140px;
-  right: 80px;
-}
-.absoluteTD4{
-  position: absolute;
-  bottom: 170px;
-  right: 99px;
-}
-/* DE5F */
-.absoluteELD5{
-  position: absolute;
-  bottom: 11px;
-  right: 180px;
-}
-/* DE6F */
-.absoluteELD6{
-  position: absolute;
-  bottom: 13px;
-  right: 180px;
+#blockCM,#blockABC1,#blockABC2,#blockABC3,#blockABC4,#blockDE1,#blockDE2,#blockDE3,#blockDE4,#blockDE5,#blockDE6{
+  margin: 30px auto 10px;
+  padding: 15px 0 0;
 }
 
-
-.footer1{
-  text-decoration: none;
+.shadow:hover{
+  filter: drop-shadow(0px 0px 10px rgb(0, 240, 0));
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
 }
-
-
 
 /* ポップアップ全体設定 */
 * {
@@ -353,3 +145,359 @@
 .popup-p{
   margin: auto;
 }
+
+
+
+.map1{
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+}
+
+/* 一般教育棟ABC棟 */
+.relativeABC{
+  position: relative;
+  max-width: 1000px;
+  min-width: 250px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ABC1F */
+.absoluteAED1{
+  position: absolute;
+  top: 70%;
+  left: 96.5%;
+}
+.absoluteELA1{
+  position: absolute;
+  top: 40.2%;
+  left: 89%;
+}
+#popup-Aele{
+  display: none;
+}
+#popup-Aele:checked + .popup{
+  display: block;
+}
+
+.absoluteELB1{
+  position: absolute;
+  top: 36%;
+  left: 18.5%;
+}
+#popup-Bele{
+  display: none;
+}
+#popup-Bele:checked + .popup{
+  display: block;
+}
+
+.absoluteTB1_1{
+  position: absolute;
+  top: 55%;
+  left: 54%;
+}
+#popup-BtoiletGirl{
+  display: none;
+}
+#popup-BtoiletGirl:checked + .popup{
+  display: block;
+}
+.absoluteTB1_2{
+  position: absolute;
+  top: 61%;
+  left: 54%;
+}
+#popup-BtoiletBoy{
+  display: none;
+}
+#popup-BtoiletBoy:checked + .popup{
+  display: block;
+}
+.absoluteTC1{
+  position: absolute;
+  top: 60%;
+  left: 6.5%;
+}
+#popup-Ctoilet{
+  display: none;
+}
+#popup-Ctoilet:checked + .popup{
+  display: block;
+}
+.absoluteAFslope{
+  position: absolute;
+  top: 45%;
+  left: 97%;
+  transform: rotate(-90deg);
+}
+#popup-AFslope{
+  display: none;
+}
+#popup-AFslope:checked + .popup{
+  display: block;
+}
+.absoluteANslope{
+  position: absolute;
+  top: 37%;
+  left: 87%;
+  transform: rotate(180deg);
+}
+#popup-ANslope{
+  display: none;
+}
+#popup-ANslope:checked + .popup{
+  display: block;
+}
+.absoluteBNslope{
+  position: absolute;
+  top: 37%;
+  left: 57%;
+  transform: rotate(180deg);
+}
+#popup-BNslope{
+  display: none;
+}
+#popup-BNslope:checked + .popup{
+  display: block;
+}
+.absoluteCNslope{
+  position: absolute;
+  top: 28%;
+  left: 14%;
+  transform: rotate(-90deg);
+}
+#popup-CNslope{
+  display: none;
+}
+#popup-CNslope:checked + .popup{
+  display: block;
+}
+.absoluteCSslope{
+  position: absolute;
+  top: 92%;
+  left: 10%;
+}
+#popup-CSslope{
+  display: none;
+}
+#popup-CSslope:checked + .popup{
+  display: block;
+}
+.absoluteCFslope{
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: rotate(90deg);
+}
+#popup-CFslope{
+  display: none;
+}
+#popup-CFslope:checked + .popup{
+  display: block;
+}
+
+/* ABC2F */
+.absoluteELA2{
+  position: absolute;
+  top: 40%;
+  left: 91%;
+}
+.absoluteELB2{
+  position: absolute;
+  top: 35%;
+  left: 14%;
+}
+.absoluteTB2_1{
+  position: absolute;
+  top: 55%;
+  left: 53%;
+}
+.absoluteTB2_2{
+  position: absolute;
+  top: 61%;
+  left: 53%;
+}
+/* ABC3F */
+.absoluteELA3{
+  position: absolute;
+  top: 42%;
+  left: 91%;
+}
+.absoluteELB3{
+  position: absolute;
+  top: 38%;
+  left: 14.5%;
+}
+.absoluteTB3_1{
+  position: absolute;
+  top: 55%;
+  left: 53%;
+}
+.absoluteTB3_2{
+  position: absolute;
+  top: 61%;
+  left: 53%;
+}
+/* ABC4F */
+.absoluteELA4{
+  position: absolute;
+  top: 41%;
+  left: 91%;
+}
+.absoluteELB4{
+  position: absolute;
+  top: 38%;
+  left: 14.5%;
+}
+.absoluteTB4_1{
+  position: absolute;
+  top: 56%;
+  left: 53%;
+}
+.absoluteTB4_2{
+  position: absolute;
+  top: 62%;
+  left: 53%;
+}
+
+
+/* 一般教育棟DE棟 */
+.relativeDE{
+  position: relative;
+  width: 45%;
+  margin: 0 auto;
+}
+/* DE1F */
+.absoluteDele1{
+  position: absolute;
+  top: 24%;
+  left: 76%;
+}
+.Dele{
+  transform-origin: 0 100;
+  transform: rotate(90deg);
+  margin: 50px auto 30px auto;
+}
+#popup-Dele{
+  display: none;
+}
+#popup-Dele:checked + .popup{
+  display: block;
+}
+.absoluteDtoilet1{
+  position: absolute;
+  top: 67%;
+  left: 73%;
+}
+#popup-Dtoilet{
+  display: none;
+}
+#popup-Dtoilet:checked + .popup{
+  display: block;
+}
+.absoluteDNslope{
+  position: absolute;
+  top: 24%;
+  left: 95%;
+  transform: rotate(-90deg);
+}
+#popup-DNslope{
+  display: none;
+}
+#popup-DNslope:checked + .popup{
+  display: block;
+}
+.absoluteDFslope{
+  position: absolute;
+  top: 76%;
+  left: 85%;
+  transform: rotate(-90deg);
+}
+#popup-DFslope{
+  display: none;
+}
+#popup-DFslope:checked + .popup{
+  display: block;
+}
+.absoluteENslope{
+  position: absolute;
+  top: 70%;
+  left: 56%;
+  transform: rotate(180deg);
+}
+#popup-ENslope{
+  display: none;
+}
+#popup-ENslope:checked + .popup{
+  display: block;
+}
+.absoluteESslope{
+  position: absolute;
+  top: 86%;
+  left: 56%;
+}
+#popup-ESslope{
+  display: none;
+}
+#popup-ESslope:checked + .popup{
+  display: block;
+}
+
+/* DE2F */
+.absoluteDele2{
+  position: absolute;
+  top: 24%;
+  left: 76%;
+}
+.absoluteDtoilet2{
+  position: absolute;
+  top: 67%;
+  left: 72%;
+}
+/* DE3F */
+.absoluteDele3{
+  position: absolute;
+  top: 25%;
+  left: 75%;
+}
+
+.absoluteDtoilet3{
+  position: absolute;
+  top: 67%;
+  left: 70%;
+}
+/* DE4F */
+.absoluteDele4{
+  position: absolute;
+  top: 25%;
+  left: 75%;
+}
+.absoluteDtoilet4{
+  position: absolute;
+  top: 67%;
+  left: 70%;
+}
+/* DE5F */
+.absoluteDele5{
+  position: absolute;
+  top: 92%;
+  left: 47%;
+}
+/* DE6F */
+.absoluteDele6{
+  position: absolute;
+  top: 92%;
+  left: 47%;
+}
+
+
+.footer1{
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+
+
