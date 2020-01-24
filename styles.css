@@ -3,7 +3,7 @@
 html{
   background-color: pink;
   font-family: 'UD デジタル 教科書体 NP-B',Arial,'Droid Sans','メイリオ', Helvetica, sans-serif;
-
+  
 }
 .header1{
   color: #000;
@@ -16,11 +16,20 @@ html{
   padding: 10px 0 0;
 }
 .body1{
-  background-color: #f0f0f0f8;
+  background-color: #d2fad8;
   width: auto;
   margin: 3% 10%;
   border-radius: 50px;
 }
+
+.map1{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border: 5px solid rgba(0, 140, 255, 0.4);
+  border-radius: 2%;
+}
+
 .section1{
   text-align: center;
   list-style: none;
@@ -39,29 +48,37 @@ html{
   font-weight: normal;
 }
 
+@media only screen and (min-width: 801px) {
+     
+}
+@media only screen and (max-width: 800px){
+
+}
+
 ul{
   padding: 0%;
   list-style: none;
 }
 li{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .link_button{
   text-decoration: none;/*下線消す*/
-  background: rgb(0, 192, 240);/*背景を水色に*/
-  color:#fff;/*文字を白に*/
-  padding:5px 10px;/*内側の余白*/
-  border-radius: 20px;/*角を丸くする*/
+  color:#000;
+  padding:5px 10px;
+  border: solid #000 2px;
+  border-radius: 10px;/*角を丸くする*/
+  cursor :pointer;
 }
 .link_button:hover {
-  background: silver;
+  background: #efefef;
   text-decoration: none;/*下線を消す*/
 }
 
-
 #blockCM,#blockABC1,#blockABC2,#blockABC3,#blockABC4,#blockDE1,#blockDE2,#blockDE3,#blockDE4,#blockDE5,#blockDE6{
-  margin: 30px auto 10px;
+  margin: 30px 10% 10px;
   padding: 15px 0 0;
+  border-top: dotted #000;
 }
 
 .shadow:hover{
@@ -70,6 +87,48 @@ li{
   -moz-opacity: 0.7;
   opacity: 0.7;
 }
+
+/*全体*/
+.hidden_box {
+  margin: 2em 0;/*前後の余白*/
+  padding: 0;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+  padding: 15px;
+  border: dashed 2px black;
+  cursor :pointer;
+  border-radius: 10px;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+  background: #efefef;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+  display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+  padding: 10px 0;
+  height: auto;
+  opacity: 1;
+}
+
+
 
 /* ポップアップ全体設定 */
 * {
@@ -146,12 +205,9 @@ li{
   margin: auto;
 }
 
-
-
-.map1{
-  width: 100%;
-  height: auto;
-  border-radius: 2%;
+/* HOME */
+.asolutebf{
+  position: absolute;
 }
 
 /* 一般教育棟ABC棟 */
