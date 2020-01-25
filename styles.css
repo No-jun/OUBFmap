@@ -1,9 +1,21 @@
 @charset "utf-8";
+/* common */
+/* small screen */
+
 
 html{
   background-color: pink;
   font-family: 'UD デジタル 教科書体 NP-B',Arial,'Droid Sans','メイリオ', Helvetica, sans-serif;
-  
+}
+aside{
+  display: none;
+}
+
+.body1{
+  background-color: #d2fad8;
+  width: auto;
+  margin: 3% 5%;
+  border-radius: 50px;
 }
 .header1{
   color: #000;
@@ -14,12 +26,6 @@ html{
   width: auto;
   height: auto;
   padding: 10px 0 0;
-}
-.body1{
-  background-color: #d2fad8;
-  width: auto;
-  margin: 3% 10%;
-  border-radius: 50px;
 }
 
 .map1{
@@ -46,13 +52,6 @@ html{
   display: inline-block;
   font-size: 20px;
   font-weight: normal;
-}
-
-@media only screen and (min-width: 801px) {
-     
-}
-@media only screen and (max-width: 800px){
-
 }
 
 ul{
@@ -555,5 +554,12 @@ li{
   padding-bottom: 10px;
 }
 
-
-
+/* large screen */
+@media (min-width: 501px) {
+  aside{
+    display: block;
+    position: fixed;
+    background: plum;
+    width: 160px;
+  }
+}
