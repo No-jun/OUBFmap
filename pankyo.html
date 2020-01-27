@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
   <title>一般教育棟</title>
 </head>
 
 <body class="body1">
-  <div align="center">
+  <div>
     <header class="header1">
       <h1>一般教育棟</h1>
     </header>
 
     <section>
       <h3 class="section1">マップ上のアイコン(AEDを除く)をタップすると，その場所の写真をみることができます。</h3>
-      <div class="section3">
-        <table border="1" style="border-collapse: collapse">
+      <div class="section3"><table>
           <thead>
-            <tr>
-              <th>アイコン</th>
-              <th>説明</th>
-            </tr>
+            <tr><th>アイコン</th> <th>説明</th></tr>
           </thead>
           <tbody>
-            <tr>
-              <td><img src="img/icon/AED.png" width="50" height="40"alt="AED"></td>
+            <tr><td><img src="img/icon/AED.png" width="50" height="40"alt="AED"></td>
               <td>AED</td>
             </tr>
             <tr>
@@ -42,10 +39,8 @@
               <td><img src="img/icon/slopemanu.png" width="60" height="40" alt="スロープ手動扉"></td>
               <td>スロープ手動扉</td>
             </tr>
-          </tbody>
-        </table>
-      </div class="section3">
-
+          </tbody></table>
+      </div>
     </section>
 
     <ul class="section1">
@@ -67,7 +62,7 @@
         <div class="relativeABC">
           <img src="img/pankyo/pankyofloor1.png" width="600" height="500" alt="1Fマップの画像です" class="map1">
 
-          <img src="img/icon/AED.png" width="25" height="20" alt="AED" class="absoluteAED1">
+          <img src="img/icon/AED.png" width="25" height="20" alt="AED" class="absoluteAED1 shadow">
 
           <div>
             <label for="popup-Aele"><div class="btn-open">
@@ -111,7 +106,7 @@
               <div class="popup-content">
                 <!-- ポップアップの中身 -->
                 <h2>一般教育棟B棟多目的トイレ</h2><br>女子トイレ内にあります<br>
-                <img src="img/pankyo/BtoiletGirl.JPG" width="280" height="480" alt="一般教育棟B棟の女子トイレ">
+                <img src="img/pankyo/BtoiletGirl.JPG" class="img2" alt="一般教育棟B棟の女子トイレ">
                 <!-- ./ポップアップの中身　ここまで -->
               </div>
               <label for="popup-BtoiletGirl"><div class="btn-close">閉じる</div></label>
@@ -127,7 +122,7 @@
               <div class="popup-content">
                 <!-- ポップアップの中身 -->
                 <h2>一般教育棟B棟の多目的トイレ</h2><br>男子トイレ内にあります<br>
-                <img src="img/pankyo/BtoiletBoy.JPG" width="500" height="375" alt="一般教育棟B棟の男子トイレ">
+                <img src="img/pankyo/BtoiletBoy.JPG" class="img1" alt="一般教育棟B棟の男子トイレ">
                 <!-- ./ポップアップの中身　ここまで -->
               </div>
               <label for="popup-BtoiletBoy"><div class="btn-close">閉じる</div></label>
@@ -143,107 +138,159 @@
               <div class="popup-content">
                 <!-- ポップアップの中身 -->
                 <h2>一般教育棟C棟の多目的トイレ</h2><p>トイレ内にベッドがあります</p>
-                <img src="img/pankyo/Ctoilet.JPG" width="500" height="375" alt="一般教育棟C棟の多目的トイレ">
+                <img src="img/pankyo/Ctoilet.JPG" class="img1" alt="一般教育棟C棟の多目的トイレ">
                 <!-- ./ポップアップの中身　ここまで -->
               </div>
               <label for="popup-Ctoilet"><div class="btn-close">閉じる</div></label>
             </div>
           </div>         
           <div>
-            <label for="popup-AFslope"><div class="btn-open">
-              <!-- 画像 -->
-              <img src="img/icon/slopeauto.png" width="30" height="20" alt="A棟入口のスロープ" class="absoluteAFslope shadow"></div></label>
-            <input type="checkbox" id="popup-AFslope">
-            <div class="popup">
-              <label for="popup-AFslope" class="icon-close">×</label>
-              <div class="popup-content">
-                <!-- ポップアップの中身 -->
-                <h2>一般教育棟A棟の正面玄関</h2><p></p>
-                <img src="img/pankyo/AFslope.JPG" width="500" height="375" alt="一般教育棟A棟の正面玄関">
-                <!-- ./ポップアップの中身　ここまで -->
-              </div>
-              <label for="popup-AFslope"><div class="btn-close">閉じる</div></label>
-            </div>
-          </div>          
-          <div>
             <label for="popup-ANslope"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/slopeauto.png" width="30" height="20" alt="A棟北口のスロープ" class="absoluteANslope shadow"></div></label>
+              <img src="img/icon/slopeauto.png" width="30" height="20" alt="A棟入口のスロープ" class="absoluteANslope shadow"></div></label>
             <input type="checkbox" id="popup-ANslope">
             <div class="popup">
               <label for="popup-ANslope" class="icon-close">×</label>
               <div class="popup-content">
                 <!-- ポップアップの中身 -->
-                <h2>一般教育棟A棟の北口</h2><p>L-cafeへの連絡通路にもなっています</p>
-                <img src="img/pankyo/ANslope.JPG" width="500" height="375" alt="一般教育棟A棟の北口">
-                <!-- ./ポップアップの中身　ここまで -->
+                <h2>一般教育棟A棟北側の玄関</h2>
+                <p>スロープの角度</p>
+                <div class="section3"><table><tbody >
+                    <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                    <tr><td>4.5°</td><td>4.2°</td><td>4°</td><td>4.2°</td></tr>
+                  </tbody></table></div>
+                  <img src="img/pankyo/ANslope.JPG" class="img1" alt="一般教育棟A棟の正面玄関">
+                  <!-- ./ポップアップの中身　ここまで -->
               </div>
               <label for="popup-ANslope"><div class="btn-close">閉じる</div></label>
             </div>
-          </div>         
+          </div>
           <div>
-            <label for="popup-BNslope"><div class="btn-open">
+            <label for="popup-AEslope"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/slopeauto.png" width="30" height="20" alt="B棟北口のスロープ" class="absoluteBNslope shadow"></div></label>
-            <input type="checkbox" id="popup-BNslope">
+              <img src="img/icon/slopemanu.png" width="30" height="20" alt="A棟こももショップ入口のスロープ" class="absoluteAEslope shadow"></div></label>
+            <input type="checkbox" id="popup-AEslope">
             <div class="popup">
-              <label for="popup-BNslope" class="icon-close">×</label>
+              <label for="popup-AEslope" class="icon-close">×</label>
               <div class="popup-content">
                 <!-- ポップアップの中身 -->
-                <h2>一般教育棟B棟の北口</h2><p></p>
-                <img src="img/pankyo/BNslope.JPG" width="500" height="375" alt="一般教育棟B棟の北口">
+                <h2>一般教育棟A棟のこももショップ入口</h2>
+                <p>通路中央にマンホール有</p>
+                <p>スロープの角度</p>
+                <div class="section3"><table><tbody >
+                      <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                      <tr><td>3.6°</td><td>3.9°</td><td>3.5°</td><td>3.7°</td></tr>
+                    </tbody></table></div>
+                <img src="img/pankyo/AEslope.png" class="img1" alt="一般教育棟A棟の東口">
                 <!-- ./ポップアップの中身　ここまで -->
               </div>
-              <label for="popup-BNslope"><div class="btn-close">閉じる</div></label>
+              <label for="popup-AEslope"><div class="btn-close">閉じる</div></label>
+            </div>
+          </div>          
+          <div>
+            <label for="popup-AWslope"><div class="btn-open">
+              <!-- 画像 -->
+              <img src="img/icon/slopeauto.png" width="30" height="20" alt="A棟西口のスロープ" class="absoluteAWslope shadow"></div></label>
+            <input type="checkbox" id="popup-AWslope">
+            <div class="popup">
+              <label for="popup-AWslope" class="icon-close">×</label>
+              <div class="popup-content">
+                <!-- ポップアップの中身 -->
+                <h2>一般教育棟A棟の西口</h2>
+                <p>L-cafeへの連絡通路にもなっています</p>
+                <p>スロープの角度</p>
+                <div class="section3"><table><tbody >
+                      <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                      <tr><td>4.4°</td><td>1.5°</td><td>4.3°</td><td>3.4°</td></tr>
+                    </tbody></table></div>
+                <img src="img/pankyo/AWslope.JPG" class="img1" alt="一般教育棟A棟の西口">
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+              <label for="popup-AWslope"><div class="btn-close">閉じる</div></label>
+            </div>
+          </div>         
+          <div>
+            <label for="popup-BWslope"><div class="btn-open">
+              <!-- 画像 -->
+              <img src="img/icon/slopeauto.png" width="30" height="20" alt="B棟西口のスロープ" class="absoluteBWslope shadow"></div></label>
+            <input type="checkbox" id="popup-BWslope">
+            <div class="popup">
+              <label for="popup-BWslope" class="icon-close">×</label>
+              <div class="popup-content">
+                <!-- ポップアップの中身 -->
+                <h2>一般教育棟B棟の西口</h2>
+                <p>スロープの角度</p>
+                <div class="section3"><table><tbody >
+                      <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                      <tr><td>5.5°</td><td>5.2°</td><td>8.1°</td><td>6.3°</td></tr>
+                    </tbody></table></div>
+                <img src="img/pankyo/BWslope.JPG" class="img1" alt="一般教育棟B棟の西口">
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+              <label for="popup-BWslope"><div class="btn-close">閉じる</div></label>
             </div>
           </div>                    
           <div>
-            <label for="popup-CNslope"><div class="btn-open">
+            <label for="popup-CWslope"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/slopemanu.png" width="30" height="20" alt="C棟北口のスロープ" class="absoluteCNslope shadow"></div></label>
-            <input type="checkbox" id="popup-CNslope">
+              <img src="img/icon/slopemanu.png" width="30" height="20" alt="C棟西口のスロープ" class="absoluteCWslope shadow"></div></label>
+            <input type="checkbox" id="popup-CWslope">
             <div class="popup">
-              <label for="popup-CNslope" class="icon-close">×</label>
+              <label for="popup-CWslope" class="icon-close">×</label>
               <div class="popup-content">
                 <!-- ポップアップの中身 -->
-                <h2>一般教育棟C棟の北口</h2><p>事務所への入口になっています</p>
-                <img src="img/pankyo/CNslope.JPG" width="500" height="375" alt="一般教育棟C棟の北口">
+                <h2>一般教育棟C棟の西口</h2>
+                <p>事務室への入口になっています</p>
+                <p>スロープの角度</p>
+                <div class="section3"><table><tbody >
+                      <tr><th>平均</th></tr>
+                      <tr><td>6°</td></tr>
+                    </tbody></table></div>
+                <img src="img/pankyo/CWslope.JPG" class="img1" alt="一般教育棟C棟の西口">
                 <!-- ./ポップアップの中身　ここまで -->
               </div>
-              <label for="popup-CNslope"><div class="btn-close">閉じる</div></label>
+              <label for="popup-CWslope"><div class="btn-close">閉じる</div></label>
             </div>
           </div>                  
           <div>
+            <label for="popup-CEslope"><div class="btn-open">
+              <!-- 画像 -->
+              <img src="img/icon/slopemanu.png" width="30" height="20" alt="C棟東口のスロープ" class="absoluteCEslope shadow"></div></label>
+            <input type="checkbox" id="popup-CEslope">
+            <div class="popup">
+              <label for="popup-CEslope" class="icon-close">×</label>
+              <div class="popup-content">
+                <!-- ポップアップの中身 -->
+                <h2>一般教育棟C棟の東口</h2>
+                <img src="img/pankyo/CEslope.JPG" class="img1" alt="一般教育棟C棟の東口">
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+              <label for="popup-CEslope"><div class="btn-close">閉じる</div></label>
+            </div>
+          </div>         
+          <div>
             <label for="popup-CSslope"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/slopemanu.png" width="30" height="20" alt="C棟南口のスロープ" class="absoluteCSslope shadow"></div></label>
+              <img src="img/icon/slopeauto.png" width="30" height="20" alt="C棟正面のスロープ" class="absoluteCSslope shadow"></div></label>
             <input type="checkbox" id="popup-CSslope">
             <div class="popup">
               <label for="popup-CSslope" class="icon-close">×</label>
               <div class="popup-content">
                 <!-- ポップアップの中身 -->
-                <h2>一般教育棟C棟の南口</h2><p></p>
-                <img src="img/pankyo/CSslope.JPG" width="500" height="375" alt="一般教育棟C棟の南口">
+                <h2>一般教育棟C棟の正面玄関</h2>
+                <p>付近に車を止めることができます</p>
+                <p>スロープの角度</p>
+                <div class="section3"><table><tbody >
+                      <tr><th> </th><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                      <tr><td>西側</td><td>4.8°</td><td>4.6°</td><td>4.1°</td><td>3.9°</td></tr>
+                      <tr><td>東側</td><td>4.9°</td><td>3.7°</td><td>3.2°</td><td>3.7°</td></tr>
+                    </tbody></table></div>
+                <img src="img/pankyo/CSslope.JPG" class="img1" alt="一般教育棟C棟の南口">
                 <!-- ./ポップアップの中身　ここまで -->
               </div>
               <label for="popup-CSslope"><div class="btn-close">閉じる</div></label>
             </div>
-          </div>         
-          <label for="popup-CFslope"><div class="btn-open">
-            <!-- 画像 -->
-            <img src="img/icon/slopeauto.png" width="30" height="20" alt="C棟正面のスロープ" class="absoluteCFslope shadow"></div></label>
-          <input type="checkbox" id="popup-CFslope">
-          <div class="popup">
-            <label for="popup-CFslope" class="icon-close">×</label>
-            <div class="popup-content">
-              <!-- ポップアップの中身 -->
-              <h2>一般教育棟C棟の正面玄関</h2><p>付近に車を止めることができます</p>
-              <img src="img/pankyo/CFslope.JPG" width="500" height="375" alt="一般教育棟C棟の南口">
-              <!-- ./ポップアップの中身　ここまで -->
-            </div>
-            <label for="popup-CFslope"><div class="btn-close">閉じる</div></label>
-          </div>
-        </div>        
+          </div>        
         </div>
     </section>
     
@@ -342,6 +389,7 @@
 
 
 
+
     <section class="section1">
       <h2 id="blockDE1">D,E棟1F</h2>
       <div class="relativeDE">
@@ -356,7 +404,7 @@
             <div class="popup-content">
               <!-- ポップアップの中身 -->
               <h2>一般教育棟D棟のエレベーター</h2>
-              <img class="Dele" src="img/pankyo/Dele.JPG" width="400" height="300" alt="一般教育棟D棟のエレベーター">
+              <img src="img/pankyo/Dele.png" class="img1" alt="一般教育棟D棟のエレベーター">
               <!-- ./ポップアップの中身　ここまで -->
             </div>
             <label for="popup-Dele"><div class="btn-close">閉じる</div></label>
@@ -372,21 +420,101 @@
             <div class="popup-content">
               <!-- ポップアップの中身 -->
               <h2>一般教育棟D棟の多目的トイレ</h2>
-              <img src="img/pankyo/Dtoilet.JPG" width="500" height="375"  alt="一般教育棟D棟の多目的トイレ">
+              <img src="img/pankyo/Dtoilet.JPG" class="img1"  alt="一般教育棟D棟の多目的トイレ">
               <!-- ./ポップアップの中身　ここまで -->
             </div>
             <label for="popup-Dtoilet"><div class="btn-close">閉じる</div></label>
           </div>
         </div>
 
-        <img src="img/icon/slopeauto.png" width="30" height="20" alt="D棟北口のスロープ" class="absoluteDNslope shadow">
-
-        <img src="img/icon/slopeauto.png" width="30" height="20" alt="D棟正面のスロープ" class="absoluteDFslope shadow">
-
-        <img src="img/icon/slopemanu.png" width="30" height="20" alt="E棟北口のスロープ" class="absoluteENslope shadow">
-
-        <img src="img/icon/slopemanu.png" width="30" height="20" alt="E棟南口のスロープ" class="absoluteESslope shadow">
-
+        <div>
+          <label for="popup-DWslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="30" height="20" alt="D棟西口のスロープ" class="absoluteDWslope shadow">
+          </div></label>
+          <input type="checkbox" id="popup-DWslope">
+          <div class="popup">
+            <label for="popup-DWslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>D棟西口のスロープ(自動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                    <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                    <tr><td>°</td><td>°</td><td>°</td><td>°</td></tr>
+                  </tbody></table></div>
+              <img src="img/pankyo/DWslope.JPG" class="img1"  alt="D棟西口のスロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-DWslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+        
+        <div>
+          <label for="popup-DNslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="30" height="20" alt="D棟北口のスロープ" class="absoluteDNslope shadow"></div></label>
+          <input type="checkbox" id="popup-DNslope">
+          <div class="popup">
+            <label for="popup-DNslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>D棟北口のスロープ(自動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                    <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                    <tr><td>3.5°</td><td>3.9°</td><td>3.8°</td><td>3.7°</td></tr>
+                  </tbody></table></div>
+              <img src="img/pankyo/DNslope.JPG" class="img1"  alt="D棟北口のスロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-DNslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+        
+        <div>
+          <label for="popup-EWslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="30" height="20" alt="E棟西口のスロープ" class="absoluteEWslope shadow"></div></label>
+          <input type="checkbox" id="popup-EWslope">
+          <div class="popup">
+            <label for="popup-EWslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>E棟西口のスロープ(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                    <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                    <tr><td>11.3°</td><td>7.8°</td><td>10.9°</td><td>10°</td></tr>
+                  </tbody></table></div>
+              <img src="img/pankyo/EWslope.JPG" class="img1"  alt="E棟西口のスロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-EWslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+        
+        <div>
+          <label for="popup-EEslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="30" height="20" alt="E棟東口のスロープ" class="absoluteEEslope shadow"></div></label>
+          <input type="checkbox" id="popup-EEslope">
+          <div class="popup">
+            <label for="popup-EEslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>E棟東口のスロープ(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                    <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                    <tr><td>9.4°</td><td>9°</td><td>9.2°</td><td>9.2°</td></tr>
+                  </tbody></table></div>
+              <img src="img/pankyo/EEslope.JPG" class="img1" alt="E棟東口のスロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-EEslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
       </div>
   </section>
   
