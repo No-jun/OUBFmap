@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+  <title>附属図書館</title>
+</head>
+
+<body class="body1">
+  <div>
+    <header class="header1">
+      <h1>附属図書館</h1>
+    </header>
+
+    <section>
+      <h3 class="section1">マップ上のアイコン(AEDを除く)をタップすると，その場所の写真をみることができます。</h3>
+      <div class="section3"><table>
+          <thead>
+            <tr><th>アイコン</th> <th>説明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><img src="img/icon/AED.png" width="50" height="40"alt="AED"></td>
+              <td>AED</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/elevator.png" width="50" height="50" alt="エレベーター"></td>
+              <td>エレベーター</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/toilet.png" width="50" height="50" alt="多目的トイレ"></td>
+              <td>多目的トイレ</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/slopeauto.png" width="60" height="40" alt="スロープ自動扉"></td>
+              <td>スロープ自動扉</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/slopemanu.png" width="60" height="40" alt="スロープ手動扉"></td>
+              <td>スロープ手動扉</td>
+            </tr>
+          </tbody></table>
+      </div>
+    </section>
+
+    <ul class="section1">
+      <h2>エリア</h2>
+      <li><a href="#block_tosho1" class="link_button">1F</a></li>
+      <li><a href="#block_tosho2" class="link_button">2F</a></li>
+      <li><a href="#block_tosho3" class="link_button">3F</a></li>
+      <li><a href="#block_tosho4" class="link_button">4F</a></li>
+      <li><a href="#block_tosho6" class="link_button">6F</a></li>
+    </ul>
+
+    <section class="section1">
+      <h2 id="block_tosho1">1F</h2>     
+      <div class="relative_tosho">
+        <img src="img/toshokan/toshokan1.png" width="600" height="500" alt="1Fマップの画像です" class="map1">
+
+        <div>
+          <label for="popup-toshoWele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="Tosho_Wele1 shadow icon_tosho"></div></label>
+          <input type="checkbox" id="popup-toshoWele">
+          <div class="popup">
+            <label for="popup-toshoWele" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>西館のエレベーター</h2>
+              <p>エレベーターは隣にもう1台あります。</p>
+              <img src="img/toshokan/tosho_Wele.jpg" class="img1" alt="西館のエレベーター">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-toshoWele"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-toshoSele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="Tosho_Sele1 shadow icon_tosho"></div></label>
+          <input type="checkbox" id="popup-toshoSele">
+          <div class="popup">
+            <label for="popup-toshoSele" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>本館のエレベーター</h2>
+              <img src="img/toshokan/tosho_Sele.jpg" class="img1" alt="本館のエレベーター">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-toshoSele"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-toshoEt"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="Tosho_Et1 shadow icon_tosho"></div></label>
+          <input type="checkbox" id="popup-toshoEt">
+          <div class="popup">
+            <label for="popup-toshoEt" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>本館の多目的トイレ</h2>
+              <img src="img/toshokan/tosho_Et.jpg" class="img1" alt="多目的トイレ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-toshoEt"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-toshoWt"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="Tosho_Wt1 shadow icon_tosho"></div></label>
+          <input type="checkbox" id="popup-toshoWt">
+          <div class="popup">
+            <label for="popup-toshoWt" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>西館の多目的トイレ</h2>
+              <p>タッチ式自動ドアです。</p>
+              <img src="img/toshokan/tosho_Wt.jpg" class="img1" alt="多目的トイレ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-toshoWt"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+        
+        <div>
+          <label for="popup-toshoFEslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="25" height="25" alt="自動扉スロープ" class="Tosho_FEslope shadow icon_tosho"></div></label>
+          <input type="checkbox" id="popup-toshoFEslope">
+          <div class="popup">
+            <label for="popup-toshoFEslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>本館入口(自動扉)東側のスロープ</h2>
+              <img src="img/toshokan/tosho_FEslope.jpg" class="img1" alt="自動扉スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-toshoFEslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+        
+        <div>
+          <label for="popup-toshoFWslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="25" height="25" alt="自動扉スロープ" class="Tosho_FWslope shadow icon_tosho"></div></label>
+          <input type="checkbox" id="popup-toshoFWslope">
+          <div class="popup">
+            <label for="popup-toshoFWslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>本館入口(自動扉)西側のスロープ</h2>
+              <img src="img/toshokan/tosho_FWslope.jpg" class="img1" alt="自動扉スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-toshoFWslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="block_tosho2">2F</h2>     
+      <div class="relative_tosho">
+        <img src="img/toshokan/toshokan2.png" width="600" height="500" alt="1Fマップの画像です" class="map1">
+        <div>
+          <label for="popup-toshoWele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="Tosho_Wele2 shadow icon_tosho"></div></label>
+          <input type="checkbox" id="popup-toshoWele">
+        </div>
+
+        <div>
+          <label for="popup-toshoSele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="Tosho_Sele2 shadow icon_tosho"></div></label>
+          <input type="checkbox" id="popup-toshoSele">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="block_tosho3">3F</h2>     
+      <div class="relative_tosho">
+        <img src="img/toshokan/toshokan3.png" width="600" height="500" alt="3Fマップの画像です" class="map1">
+        <div>
+          <label for="popup-toshoWele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="Tosho_Wele3 shadow icon_tosho"></div></label>
+          <input type="checkbox" id="popup-toshoWele">
+        </div>
+
+        <div>
+          <label for="popup-toshoSele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="Tosho_Sele3 shadow icon_tosho"></div></label>
+          <input type="checkbox" id="popup-toshoSele">
+        </div>
+
+        <div>
+          <label for="popup-toshoWt"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="Tosho_Wt3 shadow icon_tosho"></div></label>
+          <input type="checkbox" id="popup-toshoWt">
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="block_tosho4">西館4F</h2>     
+      <div class="relative_tosho46">
+        <img src="img/toshokan/toshokan4.png" width="400" height="600" alt="4Fマップの画像です" class="map1">
+        <div>
+          <label for="popup-toshoWele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="Tosho_Wele4 shadow icon_tosho46"></div></label>
+          <input type="checkbox" id="popup-toshoWele">
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="block_tosho6">6F</h2>     
+      <div class="relative_tosho46">
+        <img src="img/toshokan/toshokan6.png" width="400" height="600" alt="6Fマップの画像です" class="map1">
+        <div>
+          <label for="popup-toshoWele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="Tosho_Wele6 shadow icon_tosho46"></div></label>
+          <input type="checkbox" id="popup-toshoWele">
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer1">
+    <p><a href="#" class="top_button">TOPへ</a></p>
+    <p>&copy okayama-university.ac.jp</p>
+    </footer>
+  </div>
+</body>
+</html>

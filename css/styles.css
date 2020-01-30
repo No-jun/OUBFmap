@@ -1,0 +1,957 @@
+@charset "utf-8";
+/* common */
+/* small screen */
+
+
+html{
+  background-color: pink;
+  font-size: calc(112.5% + 4 * (100vw - 600px) / 400);
+  font-family: 'UD デジタル 教科書体 NP-B',Arial,'Droid Sans','メイリオ', Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+aside{
+  display: none;
+}
+
+.body1{
+  background-color: #d2fad8;
+  width: auto;
+  margin: 3% 5%;
+  border-radius: 50px;
+}
+.header1{
+  color: #000;
+  border: inherit;
+  font-size: 25px;
+  text-align: center;
+  font-weight: normal;
+  width: auto;
+  height: auto;
+  padding: 10px 0 0;
+}
+
+.map1{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border: 5px solid rgba(0, 140, 255, 0.4);
+  border-radius: 2%;
+}
+
+
+.img1{
+  width: 70%;
+  height: auto;
+  margin: 2%;
+}
+.img2{
+  width: 40%;
+  height: auto;
+  margin: 2%;
+}
+
+.section1{
+  text-align: center;
+  list-style: none;
+  display: block;
+  margin: 10 auto;
+  padding: auto;
+  font-size: 20px;
+  font-weight: normal;
+  text-decoration: none;
+
+}
+.section3{
+  text-align: center;  
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: normal;
+  margin: auto 10%;
+}
+
+p{
+  margin: auto;
+  padding: auto;
+}
+p + p {
+  margin: 10px auto auto;
+}
+
+table, th, td{
+  border: #000 solid 1px;
+  flex: 1;
+}
+
+ul{
+  padding: 0%;
+  list-style: none;
+}
+li{
+  margin-bottom: 30px;
+}
+.link_button{
+  text-decoration: none;/*下線消す*/
+  color:#000;
+  padding:5px 10px;
+  border: solid #000 2px;
+  border-radius: 10px;/*角を丸くする*/
+  cursor :pointer;
+}
+.link_button:hover {
+  background: #efefef;
+  text-decoration: none;/*下線を消す*/
+}
+.top_button{
+  color:#fff;
+  background: rgb(0, 153, 255);
+  text-decoration: none;
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  padding:5px 10px;
+  margin: auto;
+  /* border: double #000 2px; */
+  border-radius: 10px;
+  cursor :pointer;  
+  }
+  .top_button:hover {
+    background: skyblue;
+    text-decoration: none;/*下線を消す*/
+  }
+
+#blockCM,#blockABC1,#blockABC2,#blockABC3,#blockABC4,
+#blockDE1,#blockDE2,#blockDE3,#blockDE4,#blockDE5,#blockDE6,
+#blockTosho1,#blockTosho2,#blockTosho3,#blockTosho4,#blockTosho6{
+  margin: 30px 10% 10px;
+  padding: 15px 0 0;
+  border-top: dotted #000;
+}
+
+.shadow{
+  cursor: pointer;
+}
+.shadow:hover{
+  filter: drop-shadow(0px 0px 10px rgb(0, 240, 0));
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+
+/*全体*/
+.hidden_box {
+  margin: 2em 0;/*前後の余白*/
+  padding: 0;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+  padding: 5px;
+  border: dashed 2px black;
+  cursor :pointer;
+  border-radius: 10px;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+  background: #efefef;
+}
+
+/* チェックは見えなくする */
+.hidden_box input {
+  display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+  padding: 10px 0;
+  height: auto;
+  opacity: 1;
+}
+
+
+
+
+/* ポップアップ全体設定 */
+* {
+  box-sizing: border-box;
+  }
+
+/* ポップアップウインドウの設定 */
+.popup {
+  background-color: #efefef;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+  z-index: 99;
+}
+/* チェックボックスの初期設定 */
+#popup-on{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on:checked + .popup{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close{
+  background: #000;
+  color: #fff;
+  font-size: 30px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 閉じるボタン */
+.btn-close{
+  background: #000;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 95%;
+  text-align: center;
+}
+
+/* 開くボタン */
+.btn-open{
+  background: #fff;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0px;
+  cursor: pointer;
+  margin: 0px ;
+  width: 95%;
+  text-align: center;
+}
+
+/* ポップアップの内容 */
+.popup-content{
+  margin: 10% auto auto auto;
+  width: 90%;
+  height: auto;
+}
+
+.popup-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* HOME */
+  .asolutebf{
+    position: absolute;
+  }
+
+/* 一般教育棟ABC棟 */
+  .relativeABC{
+    position: relative;
+    max-width: 1000px;
+    min-width: 250px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .iconABC{
+    width: 4%;
+    height: auto;
+  }
+  /* ABC1F */
+    .absoluteAED1{
+      position: absolute;
+      top: 70%;
+      left: 95.5%;
+      margin: auto;
+    }
+    .absoluteELA1{
+      position: absolute;
+      top: 40.2%;
+      left: 89%;
+      margin: auto;
+    }
+      #popup-Aele{
+        display: none;
+      }
+      #popup-Aele:checked + .popup{
+        display: block;
+      }
+    .absoluteELB1{
+      position: absolute;
+      top: 36%;
+      left: 18.5%;
+      margin: auto;
+    }
+      #popup-Bele{
+        display: none;
+      }
+      #popup-Bele:checked + .popup{
+        display: block;
+      }
+    .absoluteTB1_1{
+      position: absolute;
+      top: 57%;
+      left: 54%;
+      margin: auto;
+    }
+      #popup-BtoiletGirl{
+        display: none;
+      }
+      #popup-BtoiletGirl:checked + .popup{
+        display: block;
+      }
+    .absoluteTC1{
+      position: absolute;
+      top: 60%;
+      left: 6.5%;
+      margin: auto;
+    }
+      #popup-Ctoilet{
+        display: none;
+      }
+      #popup-Ctoilet:checked + .popup{
+        display: block;
+      }
+    .absoluteANslope{
+      position: absolute;
+      top: 45%;
+      left: 96%;
+      margin: auto;
+      transform: rotate(-90deg);
+    }
+      #popup-ANslope{
+        display: none;
+      }
+      #popup-ANslope:checked + .popup{
+        display: block;
+      }
+    .absoluteAEslope{
+      position: absolute;
+      top: 85%;
+      left: 93%;
+      margin: auto;
+      transform: rotate(-90deg);
+    }
+      #popup-AEslope{
+        display: none;
+      }
+      #popup-AEslope:checked + .popup{
+        display: block;
+      }
+    .absoluteAWslope{
+      position: absolute;
+      top: 37%;
+      left: 87%;
+      margin: auto;
+      transform: rotate(180deg);
+    }
+      #popup-AWslope{
+        display: none;
+      }
+      #popup-AWslope:checked + .popup{
+        display: block;
+      }
+    .absoluteBWslope{
+      position: absolute;
+      top: 37%;
+      left: 57%;
+      margin: auto;
+      transform: rotate(180deg);
+    }
+      #popup-BWslope{
+        display: none;
+      }
+      #popup-BWslope:checked + .popup{
+        display: block;
+      }
+    .absoluteCWslope{
+      position: absolute;
+      top: 28%;
+      left: 14%;
+      margin: auto;
+      transform: rotate(-90deg);
+    }
+      #popup-CWslope{
+        display: none;
+      }
+      #popup-CWslope:checked + .popup{
+        display: block;
+      }
+    .absoluteCEslope{
+      position: absolute;
+      top: 93%;
+      left: 10%;
+      margin: auto;
+    }
+      #popup-CEslope{
+        display: none;
+      }
+      #popup-CEslope:checked + .popup{
+        display: block;
+      }
+    .absoluteCSslope{
+      position: absolute;
+      top: 50%;
+      left: 2%;
+      margin: auto;
+      transform: rotate(90deg);
+    }
+      #popup-CSslope{
+        display: none;
+      }
+      #popup-CSslope:checked + .popup{
+        display: block;
+      }
+
+  /* ABC2F */
+    .absoluteELA2{
+      position: absolute;
+      top: 40%;
+      left: 91%;
+      margin: auto;
+    }
+    .absoluteELB2{
+      position: absolute;
+      top: 35%;
+      left: 14%;
+      margin: auto;
+    }
+    .absoluteTB2_1{
+      position: absolute;
+      top: 55%;
+      left: 53%;
+      margin: auto;
+    }
+  /* ABC3F */
+    .absoluteELA3{
+      position: absolute;
+      top: 42%;
+      left: 91%;
+      margin: auto;
+    }
+    .absoluteELB3{
+      position: absolute;
+      top: 38%;
+      left: 14.5%;
+      margin: auto;
+    }
+    .absoluteTB3_1{
+      position: absolute;
+      top: 55%;
+      left: 53%;
+      margin: auto;
+    }
+  /* ABC4F */
+    .absoluteELA4{
+      position: absolute;
+      top: 41%;
+      left: 91%;
+      margin: auto;
+    }
+    .absoluteELB4{
+      position: absolute;
+      top: 38%;
+      left: 14.5%;
+      margin: auto;
+    }
+    .absoluteTB4_1{
+      position: absolute;
+      top: 56%;
+      left: 53%;
+      margin: auto;
+    }
+
+
+/* 一般教育棟DE棟 */
+  .relativeDE{
+    position: relative;
+    width: 45%;
+    margin: 0 auto;
+  }
+  .iconDE{
+    width: 8%;
+    height: auto;
+  }
+  /* DE1F */
+    .absoluteDele1{
+      position: absolute;
+      top: 24%;
+      left: 76%;
+      margin: auto;
+    }
+      #popup-Dele{
+        display: none;
+      }
+      #popup-Dele:checked + .popup{
+        display: block;
+      }
+    .absoluteDtoilet1{
+      position: absolute;
+      top: 67%;
+      left: 73%;
+      margin: auto;
+    }
+      #popup-Dtoilet{
+        display: none;
+      }
+      #popup-Dtoilet:checked + .popup{
+        display: block;
+      }
+    .absoluteDWslope{
+      position: absolute;
+      top: 24%;
+      left: 95%;
+      margin: auto;
+      transform: rotate(-90deg);
+    }
+      #popup-DWslope{
+        display: none;
+      }
+      #popup-DWslope:checked + .popup{
+        display: block;
+      }
+    .absoluteDNslope{
+      position: absolute;
+      top: 76%;
+      left: 85%;
+      margin: auto;
+      transform: rotate(-90deg);
+    }
+      #popup-DNslope{
+        display: none;
+      }
+      #popup-DNslope:checked + .popup{
+        display: block;
+      }
+    .absoluteEWslope{
+      position: absolute;
+      top: 70%;
+      left: 56%;
+      margin: auto;
+      transform: rotate(180deg);
+    }
+      #popup-EWslope{
+        display: none;
+      }
+      #popup-EWslope:checked + .popup{
+        display: block;
+      }
+    .absoluteEEslope{
+      position: absolute;
+      top: 86%;
+      left: 56%;
+      margin: auto;
+    }
+      #popup-EEslope{
+        display: none;
+      }
+      #popup-EEslope:checked + .popup{
+        display: block;
+      }
+
+  /* DE2F */
+    .absoluteDele2{
+      position: absolute;
+      top: 24%;
+      left: 76%;
+      margin: auto;
+    }
+    .absoluteDtoilet2{
+      position: absolute;
+      top: 67%;
+      left: 72%;
+      margin: auto;
+    }
+  /* DE3F */
+    .absoluteDele3{
+      position: absolute;
+      top: 25%;
+      left: 75%;
+      margin: auto;
+    }
+
+    .absoluteDtoilet3{
+      position: absolute;
+      top: 67%;
+      left: 70%;
+      margin: auto;
+    }
+  /* DE4F */
+    .absoluteDele4{
+      position: absolute;
+      top: 25%;
+      left: 75%;
+      margin: auto;
+    }
+    .absoluteDtoilet4{
+      position: absolute;
+      top: 67%;
+      left: 70%;
+      margin: auto;
+    }
+  /* DE5F */
+    .absoluteDele5{
+      position: absolute;
+      top: 90%;
+      left: 45%;
+      margin: auto;
+    }
+  /* DE6F */
+    .absoluteDele6{
+      position: absolute;
+      top: 90%;
+      left: 45%;
+      margin: auto;
+    }
+
+/* 附属図書館 */
+  .relative_tosho{
+    position: relative;
+    max-width: 1000px;
+    min-width: 250px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .icon_tosho{
+    width: 4%;
+    height: auto;
+  }
+  .relative_tosho46{
+    position: relative;
+    max-width: 1000px;
+    min-width: 250px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .icon_tosho46{
+    width: 7%;
+    height: auto;
+  }
+  /* 図書館1F */
+  .Tosho_Wele1{
+    position: absolute;
+      top: 56%;
+      left: 21%;
+      margin: auto;
+  }
+    #popup-toshoWele{
+      display: none;
+    }
+    #popup-toshoWele:checked + .popup{
+      display: block;
+    }
+  .Tosho_Sele1{
+    position: absolute;
+      top: 63%;
+      left: 45%;
+      margin: auto;
+  }
+    #popup-toshoSele{
+      display: none;
+    }
+    #popup-toshoSele:checked + .popup{
+      display: block;
+    }
+  .Tosho_Et1{
+    position: absolute;
+      top: 56%;
+      left: 70%;
+      margin: auto;
+  }
+    #popup-toshoEt{
+      display: none;
+    }
+    #popup-toshoEt:checked + .popup{
+      display: block;
+    }
+  .Tosho_Wt1{
+    position: absolute;
+      top: 56%;
+      left: 27%;
+      margin: auto;
+  }
+    #popup-toshoWt{
+      display: none;
+    }
+    #popup-toshoWt:checked + .popup{
+      display: block;
+    }
+  .Tosho_FEslope{
+    position: absolute;
+      top: 90%;
+      left: 85%;
+      margin: auto;
+      transform: rotate(-90deg);
+  }
+    #popup-toshoFEslope{
+      display: none;
+    }
+    #popup-toshoFEslope:checked + .popup{
+      display: block;
+    }
+  .Tosho_FWslope{
+    position: absolute;
+      top: 90%;
+      left: 15%;
+      margin: auto;
+      transform: rotate(90deg);
+  }
+    #popup-toshoFWslope{
+      display: none;
+    }
+    #popup-toshoFWslope:checked + .popup{
+      display: block;
+    }
+
+  /* 図書館2F */
+  .Tosho_Wele2{
+    position: absolute;
+      top: 56%;
+      left: 16%;
+      margin: auto;
+  }
+  .Tosho_Sele2{
+    position: absolute;
+      top: 65%;
+      left: 46%;
+      margin: auto;
+  }
+  /* 図書館3F */
+  .Tosho_Wele3{
+    position: absolute;
+      top: 56%;
+      left: 16%;
+      margin: auto;
+  }
+  .Tosho_Sele3{
+    position: absolute;
+      top: 64%;
+      left: 46%;
+      margin: auto;
+  }
+  .Tosho_Wt3{
+    position: absolute;
+      top: 56%;
+      left: 21%;
+      margin: auto;
+  }
+  /* 図書館4F */
+  .Tosho_Wele4{
+    position: absolute;
+      top: 83%;
+      left: 43%;
+      margin: auto;
+  }
+  /* 図書館6F */
+  .Tosho_Wele6{
+    position: absolute;
+      top: 84%;
+      left: 44%;
+      margin: auto;
+  }
+
+/* 環境理工学部 */
+  .relative_kanri{
+    position: relative;
+    max-width: 1000px;
+    min-width: 250px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .icon_kanri{
+    width: 4%;
+    height: auto;
+  }
+  /* 1F */
+    .kanriele1{
+      position: absolute;
+      top: 65%;
+      left: 27%;
+      margin: auto;
+    }
+      #popup-kanriele{
+        display: none;
+      }
+      #popup-kanriele:checked + .popup{
+        display: block;
+      }
+      .kanriESt1{
+        position: absolute;
+        top: 66%;
+        left: 77%;
+        margin: auto;
+      }
+        #popup-kanriESt{
+          display: none;
+        }
+        #popup-kanriESt:checked + .popup{
+          display: block;
+      }
+      .kanriWNt1{
+        position: absolute;
+        top: 32%;
+        left: 10%;
+        margin: auto;
+      }
+        #popup-kanriWNt{
+          display: none;
+        }
+        #popup-kanriWNt:checked + .popup{
+          display: block;
+        }
+      .kanriSslope{
+        position: absolute;
+        top: 90%;
+        left: 45%;
+        margin: auto;
+      }
+        #popup-kanriSslope{
+          display: none;
+        }
+        #popup-kanriSslope:checked + .popup{
+          display: block;
+        }
+  /* 2F */
+    .kanriele2{
+      position: absolute;
+      top: 49%;
+      left: 26%;
+      margin: auto;
+    }
+    .kanriESt2{
+      position: absolute;
+      top: 53%;
+      left: 80%;
+      margin: auto;
+    }
+
+/* 工学部 */
+  .relative_kou{
+    position: relative;
+    max-width: 1000px;
+    min-width: 250px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .icon_kou{
+    width: 4%;
+    height: auto;
+  }
+  /* 工学部1号館1F */
+  /* 工学部1号館2F */
+  /* 工学部1号館3F */
+  /* 工学部2号館1F */
+  
+
+/* 文・法・経済学部 */
+  .relative_bhk{
+    position: relative;
+    max-width: 1000px;
+    min-width: 250px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .icon_bhk{
+    width: 4%;
+    height: auto;
+  }
+  /* 文法経 講義棟 1F */
+
+  /* 文法経 講義棟 2F */
+  /* 文法経 1号館 1F */
+  /* 文法経 1号館 2F */
+  /* 文法経 1号館 3F */
+  
+
+
+
+
+
+/* 教育学部 */
+  .relative_kyou{
+    position: relative;
+    max-width: 1000px;
+    min-width: 250px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .icon_kyou{
+    width: 4%;
+    height: auto;
+  }
+  /* 教育学部 講義棟 1F */
+
+
+/* 理学部 */
+  .relative_ri{
+    position: relative;
+    max-width: 1000px;
+    min-width: 250px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .icon_ri{
+    width: 4%;
+    height: auto;
+  }
+  /* 理学部 1F */
+  /* 理学部 2F */
+  /* 理学部 3F */
+  /* 理学部 4F */
+
+
+/* 薬学部 */
+  .relative_yaku{
+    position: relative;
+    max-width: 1000px;
+    min-width: 250px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .icon_yaku{
+    width: 4%;
+    height: auto;
+  }
+
+/* 農学部 */
+  .relative_nou{
+    position: relative;
+    max-width: 1000px;
+    min-width: 250px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .icon_nou{
+    width: 4%;
+    height: auto;
+  }
+
+
+
+.footer1{
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+}
+@media (max-width: 501px) {
+
+}
