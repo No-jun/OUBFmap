@@ -121,9 +121,16 @@ li{
     text-decoration: none;/*下線を消す*/
   }
 
-#blockCM,#blockABC1,#blockABC2,#blockABC3,#blockABC4,
-#blockDE1,#blockDE2,#blockDE3,#blockDE4,#blockDE5,#blockDE6,
-#blockTosho1,#blockTosho2,#blockTosho3,#blockTosho4,#blockTosho6{
+#blockCM,
+#blockABC1,#blockABC2,#blockABC3,#blockABC4,#blockDE1,#blockDE2,#blockDE3,#blockDE4,#blockDE5,#blockDE6,
+#blockTosho1,#blockTosho2,#blockTosho3,#blockTosho4,#blockTosho6,
+#block_kanri1,#block_kanri2,
+
+#blockbhk_K1,#blockbhk_K2,#blockbhk_K3,#blockbhk1_1,#blockbhk1_2,#blockbhk1_3,
+#block_kyoiku_kougi1,#block_kyoiku_kougi2,#block_kyoiku_kougi3,#block_kyoiku_kougi4,
+#blockRi1,#blockRi2,#blockRi3,#blockRi4,
+#blockNou1_1,#blockNou1_2
+{
   margin: 30px 10% 10px;
   padding: 15px 0 0;
   border-top: dotted #000;
@@ -180,8 +187,6 @@ li{
 }
 
 
-
-
 /* ポップアップ全体設定 */
 * {
   box-sizing: border-box;
@@ -220,6 +225,7 @@ li{
   padding: 0 10px;
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 
 /* 閉じるボタン */
@@ -857,19 +863,338 @@ li{
     height: auto;
   }
   /* 工学部1号館1F */
+  .kou1ele1{
+    position: absolute;
+    top: 86%;
+    left: 55%;
+    margin: auto;
+  }
+    #popup-kou1ele{
+      display: none;
+    }
+    #popup-kou1ele:checked + .popup{
+      display: block;
+    }
+  .kou1t1{
+    position: absolute;
+    top: 72%;
+    left: 36%;
+    margin: auto;
+  }
+    #popup-kou1t{
+      display: none;
+    }
+    #popup-kou1t:checked + .popup{
+      display: block;
+    }
+  .kou1ESslope{
+    position: absolute;
+    top: 68%;
+    left: 84%;
+    margin: auto;
+    transform: rotate(180deg);
+  }
+  #popup-kou1ESslope{
+    display: none;
+  }
+  #popup-kou1ESslope:checked + .popup{
+    display: block;
+  }
+  .kou1WSslope{
+    position: absolute;
+    top: 68%;
+    left: 34%;
+    margin: auto;
+    transform: rotate(90deg);
+  }
+  #popup-kou1WSslope{
+    display: none;
+  }
+  #popup-kou1WSslope:checked + .popup{
+    display: block;
+  }
+  .kou1WNslope{
+    position: absolute;
+    top: 25%;
+    left: 34%;
+    margin: auto;
+    transform: rotate(90deg);
+  }
+  #popup-kou1WNslope{
+    display: none;
+  }
+  #popup-kou1WNslope:checked + .popup{
+    display: block;
+  }
+  .kou1Nslope{
+    position: absolute;
+    top: 5%;
+    left: 48%;
+    margin: auto;
+    transform: rotate(180deg);
+  }
+  #popup-kou1Nslope{
+    display: none;
+  }
+  #popup-kou1Nslope:checked + .popup{
+    display: block;
+  }
+  .kou1Sslope{
+    position: absolute;
+    top: 92%;
+    left: 48%;
+    margin: auto;
+  }
+  #popup-kou1Sslope{
+    display: none;
+  }
+  #popup-kou1Sslope:checked + .popup{
+    display: block;
+  }
+
   /* 工学部1号館2F */
+  .kou1ele2{
+    position: absolute;
+    top: 89%;
+    left: 55.5%;
+    margin: auto;
+  }
+  .kou1t2{
+    position: absolute;
+    top: 74%;
+    left: 33%;
+    margin: auto;
+  }
   /* 工学部1号館3F */
-  /* 工学部2号館1F */
+  .kou1ele3{
+    position: absolute;
+    top: 88%;
+    left: 55.5%;
+    margin: auto;
+  }
+  .kou1t3{
+    position: absolute;
+    top: 73%;
+    left: 33%;
+    margin: auto;
+  }
+
+  /* 工学部4号館1F */
+.kou4ele1{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    margin: auto;
+  }
+    #popup-kou4ele{
+      display: none;
+    }
+    #popup-kou4ele:checked + .popup{
+      display: block;
+    }
+  .kou4t1{
+    position: absolute;
+    top: 32%;
+    left: 36%;
+    margin: auto;
+  }
+    #popup-kou4t{
+      display: none;
+    }
+    #popup-kou4t:checked + .popup{
+      display: block;
+    }
+  .kou4Sslope{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    margin: auto;
+  }
+  #popup-kou4Sslope{
+    display: none;
+  }
+  #popup-kou4Sslope:checked + .popup{
+    display: block;
+  }
+  .kou4Nslope{
+    position: absolute;
+    top: 16%;
+    left: 40%;
+    margin: auto;
+    transform: rotate(180deg);
+  }
+  #popup-kou4Nslope{
+    display: none;
+  }
+  #popup-kou4Nslope:checked + .popup{
+    display: block;
+  }
+  /* 工学部4号館2F */
+  .kou4ele2{
+    position: absolute;
+    top: 33%;
+    left: 18%;
+    margin: auto;
+  }
+  /* 工学部4号館4F */
+  .kou4ele4{
+    position: absolute;
+    top: 33%;
+    left: 18%;
+    margin: auto;
+  }
+  /* 工学部5号館1F */
+  .kou5ele1{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    margin: auto;
+  }
+    #popup-kou5ele{
+      display: none;
+    }
+    #popup-kou5ele:checked + .popup{
+      display: block;
+    }
+  .kou5t1{
+    position: absolute;
+    top: 18%;
+    left: 28%;
+    margin: auto;
+  }
+    #popup-kou5t{
+      display: none;
+    }
+    #popup-kou5t:checked + .popup{
+      display: block;
+    }
+  .kou5WSslope{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    margin: auto;
+    transform: rotate(90deg);
+  }
+  #popup-kou5WSslope{
+    display: none;
+  }
+  #popup-kou5WSslope:checked + .popup{
+    display: block;
+  }
+  .kou5WNslope{
+    position: absolute;
+    top: 28%;
+    left: 15%;
+    margin: auto;
+    transform: rotate(90deg);
+  }
+  #popup-kou5WNslope{
+    display: none;
+  }
+  #popup-kou5WNslope:checked + .popup{
+    display: block;
+  }
+  /* 工学部5号館2F */
+  .kou5ele2{
+    position: absolute;
+    top: 45%;
+    left: 21%;
+    margin: auto;
+  }
+  .kou5t2{
+    position: absolute;
+    top: 27%;
+    left: 18%;
+    margin: auto;
+  }
+  /* 工学部6号館1F */
+  .kou6ele1{
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    margin: auto;
+  }
+    #popup-kou6ele{
+      display: none;
+    }
+    #popup-kou6ele:checked + .popup{
+      display: block;
+    }
+  .kou6t1{
+    position: absolute;
+    top: 43%;
+    left: 39%;
+    margin: auto;
+  }
+    #popup-kou6t{
+      display: none;
+    }
+    #popup-kou6t:checked + .popup{
+      display: block;
+    }
+  .kou6Nslope{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    margin: auto;
+    transform: rotate(180deg);
+  }
+  #popup-kou6Nslope{
+    display: none;
+  }
+  #popup-kou6Nslope:checked + .popup{
+    display: block;
+  }
+  .kou6Wslope{
+    position: absolute;
+    top: 60%;
+    left: 1%;
+    margin: auto;
+    transform: rotate(90deg);
+  }
+  #popup-kou6Wslope{
+    display: none;
+  }
+  #popup-kou6Wslope:checked + .popup{
+    display: block;
+  }
+  /* 工学部旧15号館 */
+  .kou15t{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    margin: auto;
+  }
+    #popup-kou15t{
+      display: none;
+    }
+    #popup-kou15t:checked + .popup{
+      display: block;
+    }
+  .kou15Nslope{
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    margin: auto;
+    transform: rotate(180deg);
+  }
+  #popup-kou15Nslope{
+    display: none;
+  }
+  #popup-kou15Nslope:checked + .popup{
+    display: block;
+  }
   
 
 /* 文・法・経済学部 */
   .relative_bhk{
-    position: relative;
-    max-width: 1000px;
-    min-width: 250px;
-    width: 80%;
-    margin: 0 auto;
-  }
+  position: relative;
+  max-width: 1000px;
+  min-width: 250px;
+  width: 80%;
+  margin: 0 auto;
+}
+
   .icon_bhk{
     width: 4%;
     height: auto;
@@ -883,23 +1208,95 @@ li{
   
 
 
-
-
-
 /* 教育学部 */
-  .relative_kyou{
-    position: relative;
-    max-width: 1000px;
-    min-width: 250px;
-    width: 80%;
-    margin: 0 auto;
-  }
-  .icon_kyou{
+.relative_kyoiku{
+  position: relative;
+  max-width: 1000px;
+  min-width: 250px;
+  width: 80%;
+  margin: 0 auto;
+}
+  .icon_kyoiku{
     width: 4%;
     height: auto;
   }
   /* 教育学部 講義棟 1F */
-
+  .kyoiku_kougi_ele1{
+    position: absolute;
+      top: 60%;
+      left: 5%;
+      margin: auto;
+  }
+    #popup-kyoiku_kougi_ele{
+      display: none;
+    }
+    #popup-kyoiku_kougi_ele:checked + .popup{
+      display: block;
+    }
+  .kyoiku_kougi_t1{
+    position: absolute;
+      top: 52%;
+      left: 54%;
+      margin: auto;
+  }
+    #popup-kyoiku_kougi_t{
+      display: none;
+    }
+    #popup-kyoiku_kougi_t:checked + .popup{
+      display: block;
+    }
+  .kyoiku_kougi_Wslope{
+    position: absolute;
+      top: 20%;
+      left: 24%;
+      margin: auto;
+      transform: rotate(90deg);
+  }
+    #popup-kyoiku_kougi_Wslope{
+      display: none;
+    }
+    #popup-kyoiku_kougi_Wslope:checked + .popup{
+      display: block;
+    }
+  /* 教育学部 講義棟 2F */
+  .kyoiku_kougi_ele2{
+    position: absolute;
+      top: 63%;
+      left: 2%;
+      margin: auto;
+  }
+  .kyoiku_kougi_t2{
+    position: absolute;
+      top: 54%;
+      left: 53%;
+      margin: auto;
+  }
+  /* 教育学部 講義棟 3F */
+  .kyoiku_kougi_ele3{
+    position: absolute;
+      top: 53%;
+      left: 3%;
+      margin: auto;
+  }
+  /* .kyoiku_kougi_t3{
+    position: absolute;
+      top: 52%;
+      left: 54%;
+      margin: auto;
+  } */
+  /* 教育学部 講義棟 4F */
+  .kyoiku_kougi_ele4{
+    position: absolute;
+      top: 52%;
+      left: 3%;
+      margin: auto;
+  }
+  /* .kyoiku_kougi_t4{
+    position: absolute;
+      top: 63%;
+      left: 40%;
+      margin: auto;
+  } */
 
 /* 理学部 */
   .relative_ri{
@@ -913,24 +1310,347 @@ li{
     width: 4%;
     height: auto;
   }
-  /* 理学部 1F */
-  /* 理学部 2F */
-  /* 理学部 3F */
-  /* 理学部 4F */
-
-
-/* 薬学部 */
-  .relative_yaku{
-    position: relative;
-    max-width: 1000px;
-    min-width: 250px;
-    width: 80%;
-    margin: 0 auto;
-  }
-  .icon_yaku{
-    width: 4%;
+  .icon_ri2{
+    width: 10%;
     height: auto;
   }
+
+  /* 理学部 1F */
+  .ri_ele1{
+    position: absolute;
+    top: 22%;
+    left: 76%;
+    margin: auto;
+  }
+    #popup-ri_ele{
+      display: none;
+    }
+    #popup-ri_ele:checked + .popup{
+      display: block;
+    }
+    .ri_coele1{
+      position: absolute;
+      top: 73%;
+      left: 88%;
+      margin: auto;
+    }
+      #popup-ri_coele{
+        display: none;
+      }
+      #popup-ri_coele:checked + .popup{
+        display: block;
+      }
+  .ri_1t{
+    position: absolute;
+    top: 22%;
+    left: 63%;
+    margin: auto;
+  }
+    #popup-ri_1t{
+      display: none;
+    }
+    #popup-ri_1t:checked + .popup{
+      display: block;
+    }
+  .ri_cot{
+    position: absolute;
+    top: 71%;
+    left: 82%;
+    margin: auto;
+  }
+    #popup-ri_cot{
+      display: none;
+    }
+    #popup-ri_cot:checked + .popup{
+      display: block;
+    }
+  .ri_WNslope{
+    position: absolute;
+    top: 5%;
+    left: 63%;
+    margin: auto;
+    transform: rotate(180deg);
+  }
+  #popup-ri_WNslope{
+    display: none;
+  }
+  #popup-ri_WNslope:checked + .popup{
+    display: block;
+  }
+  .ri_ENslope{
+    position: absolute;
+    top: 5%;
+    left: 75%;
+    margin: auto;
+    transform: rotate(180deg);
+  }
+  #popup-ri_ENslope{
+    display: none;
+  }
+  #popup-ri_ENslope:checked + .popup{
+    display: block;
+  }
+  .ri_ESslope{
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    margin: auto;
+    transform: rotate(180deg);
+  }
+  #popup-ri_ESslope{
+    display: none;
+  }
+  #popup-ri_ESslope:checked + .popup{
+    display: block;
+  }
+  .ri_FSslope{
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    margin: auto;
+    transform: rotate(80deg);
+  }
+  #popup-ri_FSslope{
+    display: none;
+  }
+  #popup-ri_FSslope:checked + .popup{
+    display: block;
+  }
+
+  .ri_coSslope{
+    position: absolute;
+    top: 87%;
+    left: 85%;
+    margin: auto;
+  }
+  #popup-ri_coSslope{
+    display: none;
+  }
+  #popup-ri_coSslope:checked + .popup{
+    display: block;
+  }
+  .ri_coEslope{
+    position: absolute;
+    top: 72%;
+    left: 95%;
+    margin: auto;
+    transform: rotate(-90deg);
+  }
+  #popup-ri_coEslope{
+    display: none;
+  }
+  #popup-ri_coEslope:checked + .popup{
+    display: block;
+  }
+
+
+  /* 理学部 2F */
+  .ri_ele2{
+    position: absolute;
+    top: 22%;
+    left: 75%;
+    margin: auto;
+  }
+  .ri_coele2{
+    position: absolute;
+    top: 72%;
+    left: 88%;
+    margin: auto;
+  }
+  .ri_2t{
+    position: absolute;
+    top: 11%;
+    left: 84%;
+    margin: auto;
+  }
+    #popup-ri_2t{
+      display: none;
+    }
+    #popup-ri_2t:checked + .popup{
+      display: block;
+    }
+  /* 理学部 3F */
+  .ri_ele3{
+    position: absolute;
+    top: 27%;
+    left: 76%;
+    margin: auto;
+  }
+  .ri_coele3{
+    position: absolute;
+    top: 65%;
+    left: 86%;
+    margin: auto;
+  }
+  .ri_3t{
+    position: absolute;
+    top: 62%;
+    left: 23%;
+    margin: auto;
+  }
+    #popup-ri_3t{
+      display: none;
+    }
+    #popup-ri_3t:checked + .popup{
+      display: block;
+    }
+  /* 理学部 4F */
+  .ri_ele4{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    margin: auto;
+  }
+
+/* 薬学部 */
+.relative_yaku{
+  position: relative;
+  max-width: 1000px;
+  min-width: 250px;
+  width: 80%;
+  margin: 0 auto;
+}
+.icon_yaku{
+  width: 4%;
+  height: auto;
+}
+/* 1F */
+.yaku_ele1{
+  position: absolute;
+  top: 46%;
+  left: 67%;
+  margin: auto;
+}
+#popup-yaku_ele{
+  display: none;
+}
+#popup-yaku_ele:checked + .popup{
+  display: block;
+}
+.yaku1_1t{
+  position: absolute;
+  top: 38%;
+  left: 67%;
+  margin: auto;
+}
+#popup-yaku1_1t{
+  display: none;
+}
+#popup-yaku1_1t:checked + .popup{
+  display: block;
+}
+.yaku1_Nslope{
+  position: absolute;
+  top: 65%;
+  left: 42%;
+  margin: auto;
+  transform: rotate(180deg);
+}
+#popup-yaku1_Nslope{
+  display: none;
+}
+#popup-yaku1_Nslope:checked + .popup{
+  display: block;
+}
+.yaku1_ESslope{
+  position: absolute;
+  top: 85%;
+  left: 80%;
+  margin: auto;
+}
+#popup-yaku1_ESslope{
+  display: none;
+}
+#popup-yaku1_ESslope:checked + .popup{
+  display: block;
+}
+.yaku1_FNslope{
+  position: absolute;
+  top: 43%;
+  left: 90%;
+  margin: auto;
+  transform: rotate(-100deg);
+}
+#popup-yaku1_FNslope{
+  display: none;
+}
+#popup-yaku1_FNslope:checked + .popup{
+  display: block;
+}
+.yaku1_FSslope{
+  position: absolute;
+    top: 55%;
+    left: 90%;
+    margin: auto;
+    transform: rotate(-80deg);
+}
+#popup-yaku1_FSslope{
+  display: none;
+}
+#popup-yaku1_FSslope:checked + .popup{
+  display: block;
+}
+
+.yaku1_WSslope{
+  position: absolute;
+  top: 88%;
+  left: 17%;
+  margin: auto;
+}
+#popup-yaku1_WSslope{
+  display: none;
+}
+#popup-yaku1_WSslope:checked + .popup{
+  display: block;
+}
+.yaku2_Nslope{
+  position: absolute;
+  top: 7%;
+  left: 22%;
+  margin: auto;
+  transform: rotate(180deg);
+}
+#popup-yaku2_Nslope{
+  display: none;
+}
+#popup-yaku2_Nslope:checked + .popup{
+  display: block;
+}
+.yaku2_Eslope{
+  position: absolute;
+  top: 43%;
+  left: 27%;
+  margin: auto;
+  transform: rotate(-90deg);
+}
+#popup-yaku2_Eslope{
+  display: none;
+}
+#popup-yaku2_Eslope:checked + .popup{
+  display: block;
+}
+
+
+  /* 2F */
+  .yaku_ele2{
+    position: absolute;
+    top: 45%;
+    left: 72%;
+    margin: auto;
+  }
+  .yaku2_2t{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    margin: auto;
+  }
+  #popup-yaku2_2t{
+    display: none;
+  }
+  #popup-yaku2_2t:checked + .popup{
+    display: block;
+  }
+
 
 /* 農学部 */
   .relative_nou{
@@ -944,6 +1664,102 @@ li{
     width: 4%;
     height: auto;
   }
+/* 農学部 1号館 */
+/* 1F */
+.nou1ele1{
+  position: absolute;
+  top: 55%;
+  left: 82%;
+  margin: auto;
+}
+#popup-nou1ele{
+  display: none;
+}
+#popup-nou1ele:checked + .popup{
+  display: block;
+}
+.nou1t1{
+  position: absolute;
+  top: 42%;
+  left: 82%;
+  margin: auto;
+}
+#popup-nou1t{
+  display: none;
+}
+#popup-nou1t:checked + .popup{
+  display: block;
+}
+
+.nou1ENslope{
+  position: absolute;
+  top: 5%;
+  left: 86%;
+  margin: auto;
+  transform: rotate(180deg);
+}
+#popup-nou1ENslope{
+  display: none;
+}
+#popup-nou1ENslope:checked + .popup{
+  display: block;
+}
+
+.nou1WNslope{
+  position: absolute;
+  top: 5%;
+  left: 43%;
+  margin: auto;
+  transform: rotate(180deg);
+}
+#popup-nou1WNslope{
+  display: none;
+}
+#popup-nou1WNslope:checked + .popup{
+  display: block;
+}
+
+.nou1FNslope{
+  position: absolute;
+  top: 42%;
+  left: 95%;
+  margin: auto;
+  transform: rotate(-100deg);
+}
+#popup-nou1FNslope{
+  display: none;
+}
+#popup-nou1FNslope:checked + .popup{
+  display: block;
+}
+
+.nou1FSslope{
+  position: absolute;
+  top: 58%;
+  left: 95%;
+  margin: auto;
+  transform: rotate(-80deg);
+}
+#popup-nou1FSslope{
+  display: none;
+}
+#popup-nou1FSslope:checked + .popup{
+  display: block;
+}
+/* 2F */
+.nou1ele2{
+  position: absolute;
+  top: 56%;
+  left: 82%;
+  margin: auto;
+}
+.nou1t2{
+  position: absolute;
+  top: 43%;
+  left: 81%;
+  margin: auto;
+}
+/* 3F */
 
 
 
