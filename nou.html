@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+  <title>農学部</title>
+</head>
+
+<body class="body1">
+  <div>
+    <header class="header1">
+      <h1>農学部</h1>
+    </header>
+
+    <section>
+      <h3 class="section1">マップ上のアイコン(AEDを除く)をタップすると，その場所の写真をみることができます。</h3>
+      <div class="section3"><table>
+          <thead>
+            <tr><th>アイコン</th> <th>説明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><img src="img/icon/AED.png" width="50" height="40"alt="AED"></td>
+              <td>AED</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/elevator.png" width="50" height="50" alt="エレベーター"></td>
+              <td>エレベーター</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/toilet.png" width="50" height="50" alt="多目的トイレ"></td>
+              <td>多目的トイレ</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/slopeauto.png" width="60" height="40" alt="スロープ自動扉"></td>
+              <td>スロープ自動扉</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/slopemanu.png" width="60" height="40" alt="スロープ手動扉"></td>
+              <td>スロープ手動扉</td>
+            </tr>
+          </tbody></table>
+      </div>
+    </section>
+
+    <ul class="section1">
+      <h2>エリア</h2>
+      <li><a href="#blockNou1_1" class="link_button">1号館 1F</a></li>
+      <li><a href="#blockNou1_2" class="link_button">1号館 2F</a></li>
+    </ul>
+
+    <section class="section1">
+      <h2 id="blockNou1_1">1F</h2>     
+      <div class="relative_nou">
+        <img src="img/nou/nou1_1.png" width="600" height="500" alt="1Fマップの画像です" class="map1">
+
+        <div>
+          <label for="popup-nou1ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="nou1ele1 shadow icon_nou"></div></label>
+          <input type="checkbox" id="popup-nou1ele">
+          <div class="popup">
+            <label for="popup-nou1ele" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>エレベーター</h2>
+              <img src="img/nou/nou1_ele.jpg" class="img1" alt="エレベーター">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-nou1ele"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-nou1t"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="nou1t1 shadow icon_nou"></div></label>
+          <input type="checkbox" id="popup-nou1t">
+          <div class="popup">
+            <label for="popup-nou1t" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>多目的トイレ</h2>
+              <p></p>
+              <img src="img/nou/nou1_t.jpg" class="img1" alt="多目的トイレ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-nou1t"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+      
+        <div>
+          <label for="popup-nou1ENslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="nou1ENslope shadow icon_nou"></div></label>
+          <input type="checkbox" id="popup-nou1ENslope">
+          <div class="popup">
+            <label for="popup-nou1ENslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>1号館の北東入口(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>3.8°</td><td>4.2°</td><td>4.5°</td><td>4.2°</td></tr>
+              </tbody></table></div>
+              <img src="img/nou/nou1_ENslope.jpg" class="img1" alt="北東入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-nou1ENslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-nou1WNslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="nou1WNslope shadow icon_nou"></div></label>
+          <input type="checkbox" id="popup-nou1WNslope">
+          <div class="popup">
+            <label for="popup-nou1WNslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>1号館の北西入口(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>8.3°</td><td>7.8°</td><td>8.8°</td><td>8.3°</td></tr>
+              </tbody></table></div>
+              <img src="img/nou/nou1_WNslope.jpg" class="img1" alt="北西入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-nou1WNslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-nou1FNslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="25" height="25" alt="自動扉" class="nou1FNslope shadow icon_nou"></div></label>
+          <input type="checkbox" id="popup-nou1FNslope">
+          <div class="popup">
+            <label for="popup-nou1FNslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>1号館の正面入口北側(自動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>3.6°</td><td>4.7°</td><td>4.4°</td><td>4.2°</td></tr>
+              </tbody></table></div>
+              <img src="img/nou/nou1_FNslope.jpg" class="img1" alt="正面入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-nou1FNslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-nou1FSslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="25" height="25" alt="自動扉" class="nou1FSslope shadow icon_nou"></div></label>
+          <input type="checkbox" id="popup-nou1FSslope">
+          <div class="popup">
+            <label for="popup-nou1FSslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>1号館の正面入口南側(自動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>4.5°</td><td>3.7°</td><td>3.9°</td><td>4°</td></tr>
+              </tbody></table></div>
+              <img src="img/nou/nou1_FSslope.jpg" class="img1" alt="正面入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-nou1FSslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+        
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="blockNou1_2">2F</h2>     
+      <div class="relative_nou">
+        <img src="img/nou/nou1_2.png" width="600" height="500" alt="2Fマップの画像です" class="map1">
+
+        <div>
+          <label for="popup-nou1ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="nou1ele2 shadow icon_nou"></div></label>
+          <input type="checkbox" id="popup-nou1ele">
+        </div>
+
+        <div>
+          <label for="popup-nou1t"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="nou1t2 shadow icon_nou"></div></label>
+          <input type="checkbox" id="popup-nou1t">
+        </div>
+        
+      </div>
+    </section>
+
+    
+    <footer class="footer1">
+        <p><a href="#" class="top_button">TOPへ</a></p>
+        <p>&copy okayama-university.ac.jp</p>
+    </footer>
+  </div>
+</body>
+</html>
