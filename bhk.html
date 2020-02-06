@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+  <title>文・法・経済学部</title>
+</head>
+
+<body class="body1">
+  <div>
+    <header class="header1">
+      <h1>文・法・経済学部</h1>
+    </header>
+
+    <section>
+      <h3 class="section1">マップ上のアイコン(AEDを除く)をタップすると，その場所の写真をみることができます。</h3>
+      <div class="section3"><table>
+          <thead>
+            <tr><th>アイコン</th> <th>説明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><img src="img/icon/AED.png" width="50" height="40"alt="AED"></td>
+              <td>AED</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/elevator.png" width="50" height="50" alt="エレベーター"></td>
+              <td>エレベーター</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/toilet.png" width="50" height="50" alt="多目的トイレ"></td>
+              <td>多目的トイレ</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/slopeauto.png" width="60" height="40" alt="スロープ自動扉"></td>
+              <td>スロープ自動扉</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/slopemanu.png" width="60" height="40" alt="スロープ手動扉"></td>
+              <td>スロープ手動扉</td>
+            </tr>
+          </tbody></table>
+      </div>
+    </section>
+
+    <ul class="section1">
+      <h2>エリア</h2>
+      <li><a href="#blockbhk_K1" class="link_button">講義棟 1F</a></li>
+      <li><a href="#blockbhk_K2" class="link_button">講義棟 2F</a></li>
+      <li><a href="#blockbhk1_1" class="link_button">1号館 1F</a></li>
+      <li><a href="#blockbhk1_2" class="link_button">1号館 2F</a></li>
+      <li><a href="#blockbhk1_3" class="link_button">1号館 3F</a></li>
+    </ul>
+
+    <section class="section1">
+      <h2 id="blockbhk_K1">講義棟 1F</h2>     
+      <div class="relative_bhk">
+        <img src="img/bhk/bhk_kougi_1.png" width="600" height="500" alt="講義棟1Fマップの画像です" class="map1">
+        
+        <div>
+          <label for="popup-bhk_kele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="bhk_kele1 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk_kele">
+          <div class="popup">
+            <label for="popup-bhk_kele" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>昇降機</h2>
+              <img src="img/bhk/bhk_kele.jpg" class="img1" alt="昇降機">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-bhk_kele"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-bhk_kt"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="bhk_kt shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk_kt">
+          <div class="popup">
+            <label for="popup-bhk_kt" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>多目的トイレ</h2>
+              <p></p>
+              <img src="img/bhk/bhk_kt.jpg" class="img1" alt="多目的トイレ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-bhk_kt"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+      
+        <div>
+          <label for="popup-bhk_kNslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="bhk_kNslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk_kNslope">
+          <div class="popup">
+            <label for="popup-bhk_kNslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>講義棟北側入口(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>3.6°</td><td>8.2°</td><td>5.1°</td><td>5.6°</td></tr>
+              </tbody></table></div>
+              <img src="img/bhk/bhk_kNslope.jpg" class="img1" alt="スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-bhk_kNslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-bhk1_kslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="25" height="25" alt="自動扉" class="bhk1_kslopek shadow icon_bhk"></div></label>
+          <input type="checkbox" id="popup-bhk1_kslope">
+          <div class="popup">
+            <label for="popup-bhk1_kslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>講義棟と1号館間の入口(自動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>6.7°</td><td>5.6°</td><td>0.9°</td><td>4.4°</td></tr>
+              </tbody></table></div>
+              <img src="img/bhk/bhk1_kslope.jpg" class="img1" alt="スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-bhk1_kslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+        
+        <div>
+          <label for="popup-bhk_kWNslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="25" height="25" alt="自動扉" class="bhk_kWNslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk_kWNslope">
+          <div class="popup">
+            <label for="popup-bhk_kWNslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>講義棟北西側入口(自動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>5.9°</td><td>6.9°</td><td>7°</td><td>6.6°</td></tr>
+              </tbody></table></div>
+              <img src="img/bhk/bhk_kWNslope.jpg" class="img1" alt="北西側入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-bhk_kWNslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-bhk_kWSslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="25" height="25" alt="自動扉" class="bhk_kWSslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk_kWSslope">
+          <div class="popup">
+            <label for="popup-bhk_kWSslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>講義棟南西側入口(自動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>2.5°</td><td>7.9°</td><td>7.1°</td><td>5.8°</td></tr>
+              </tbody></table></div>
+              <img src="img/bhk/bhk_kWSslope.jpg" class="img1" alt="北西側入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-bhk_kWSslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="blockbhk_K2">講義棟 2F</h2>     
+      <div class="relative_bhk">
+        <img src="img/bhk/bhk_kougi_2.png" width="600" height="500" alt="講義棟2Fマップの画像です" class="map1">
+        
+        <div>
+          <label for="popup-bhk_kele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="bhk_kele2 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk_kele">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="blockbhk1_1">1号館 1F</h2>     
+      <div class="relative_bhk">
+        <img src="img/bhk/bhk1_1.png" width="600" height="500" alt="1号館1Fマップの画像です" class="map1">
+        
+        <div>
+          <label for="popup-bhk1_ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="bhk1_ele1 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk1_ele">
+          <div class="popup">
+            <label for="popup-bhk1_ele" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>エレベーター</h2>
+              <img src="img/bhk/bhk1_ele.jpg" class="img1" alt="エレベーター">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-bhk1_ele"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-bhk1_t"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="bhk1_t1 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk1_t">
+          <div class="popup">
+            <label for="popup-bhk1_t" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>多目的トイレ</h2>
+              <p></p>
+              <img src="img/bhk/bhk1_t.jpg" class="img1" alt="多目的トイレ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-bhk1_t"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+      
+        <div>
+          <label for="popup-bhk1_Wslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="bhk1_Wslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk1_Wslope">
+          <div class="popup">
+            <label for="popup-bhk1_Wslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>1号館西側入口(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>6.2°</td><td>5.5°</td><td>2.8°</td><td>4.8°</td></tr>
+              </tbody></table></div>
+              <img src="img/bhk/bhk1_Wslope.jpg" class="img1" alt="スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-bhk1_Wslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+        
+        <div>
+          <label for="popup-bhk1_Sslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="25" height="25" alt="自動扉" class="bhk1_Sslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk1_Sslope">
+          <div class="popup">
+            <label for="popup-bhk1_Sslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>1号館南側入口(自動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>5.1°</td><td>6.2°</td><td>5.3°</td><td>5.5°</td></tr>
+              </tbody></table></div>
+              <img src="img/bhk/bhk1_Sslope.jpg" class="img1" alt="北西側入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-bhk1_Sslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-bhk1_FSslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="25" height="25" alt="自動扉" class="bhk1_FSslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk1_FSslope">
+          <div class="popup">
+            <label for="popup-bhk1_FSslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>1号館正面玄関南側入口(自動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>4.1°</td><td>5.8°</td><td>6°</td><td>5.3°</td></tr>
+              </tbody></table></div>
+              <img src="img/bhk/bhk1_FSslope.jpg" class="img1" alt="正面入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-bhk1_FSslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-bhk1_kslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="25" height="25" alt="自動扉" class="bhk1_kslope1 shadow icon_bhk"></div></label>
+          <input type="checkbox" id="popup-bhk1_kslope">
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="blockbhk1_2">1号館 2F</h2>     
+      <div class="relative_bhk">
+        <img src="img/bhk/bhk1_1.png" width="600" height="500" alt="1号館2Fマップの画像です" class="map1">
+        
+        <div>
+          <label for="popup-bhk1_ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="bhk1_ele2 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk1_ele">
+        </div>
+
+        <div>
+          <label for="popup-bhk1_t"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="bhk1_t2 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk1_t">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="blockbhk1_3">1号館 3F</h2>     
+      <div class="relative_bhk">
+        <img src="img/bhk/bhk1_3.png" width="600" height="500" alt="1号館3Fマップの画像です" class="map1">
+        
+        <div>
+          <label for="popup-bhk1_ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="bhk1_ele3 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk1_ele">
+        </div>
+
+        <div>
+          <label for="popup-bhk1_t"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="bhk1_t3 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-bhk1_t">
+        </div>
+
+      </div>
+    </section>
+    
+    <footer class="footer1">
+    <p><a href="#" class="top_button">TOPへ</a></p>
+    <p>&copy okayama-university.ac.jp</p>
+    </footer>
+  </div>
+</body>
+</html>
