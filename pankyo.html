@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
   <title>一般教育棟</title>
 </head>
 
@@ -45,16 +46,16 @@
 
     <ul class="section1">
       <h2>エリア</h2>
-      <li><a href="#blockABC1" class="link_button">A,B,C棟1F</a></li>
-      <li><a href="#blockABC2" class="link_button">A,B,C棟2F</a></li>
-      <li><a href="#blockABC3" class="link_button">A,B,C棟3F</a></li>
-      <li><a href="#blockABC4" class="link_button">A,B,C棟4F</a></li>
-      <li><a href="#blockDE1" class="link_button">D,E棟1F</a></li>
-      <li><a href="#blockDE2" class="link_button">D,E棟2F</a></li>
-      <li><a href="#blockDE3" class="link_button">D,E棟3F</a></li>
-      <li><a href="#blockDE4" class="link_button">D,E棟4F</a></li>
-      <li><a href="#blockDE5" class="link_button">D,E棟5F</a></li>
-      <li><a href="#blockDE6" class="link_button">D,E棟6F</a></li>
+      <li><a href="#blockABC1" class="link_button">A,B,C棟 1F</a></li>
+      <li><a href="#blockABC2" class="link_button">A,B,C棟 2F</a></li>
+      <li><a href="#blockABC3" class="link_button">A,B,C棟 3F</a></li>
+      <li><a href="#blockABC4" class="link_button">A,B,C棟 4F</a></li>
+      <li><a href="#blockDE1" class="link_button">D,E棟 1F</a></li>
+      <li><a href="#blockDE2" class="link_button">D,E棟 2F</a></li>
+      <li><a href="#blockDE3" class="link_button">D,E棟 3F</a></li>
+      <li><a href="#blockDE4" class="link_button">D,E棟 4F</a></li>
+      <li><a href="#blockDE5" class="link_button">D,E棟 5F</a></li>
+      <li><a href="#blockDE6" class="link_button">D,E棟 6F</a></li>
     </ul>
 
     <section class="section1">
@@ -62,19 +63,19 @@
         <div class="relativeABC">
           <img src="img/pankyo/pankyofloor1.png" width="600" height="500" alt="1Fマップの画像です" class="map1">
 
-          <img src="img/icon/AED.png" width="25" height="20" alt="AED" class="absoluteAED1 shadow">
+          <img src="img/icon/AED.png" width="25" height="20" alt="AED" class="absoluteAED1 iconABC">
 
           <div>
             <label for="popup-Aele"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELA1 shadow"></div></label>
+              <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELA1 shadow iconABC"></div></label>
             <input type="checkbox" id="popup-Aele">
             <div class="popup">
               <label for="popup-Aele" class="icon-close">×</label>
               <div class="popup-content">
                 <!-- ポップアップの中身 -->
                 <h2>一般教育棟A棟のエレベーター</h2>
-                <img src="img/pankyo/Aele.JPG" width="500" height="375" alt="一般教育棟A棟のエレベーター">
+                <img src="img/pankyo/Aele.JPG" class="img1" alt="一般教育棟A棟のエレベーター">
                 <!-- ./ポップアップの中身　ここまで -->
               </div>
               <label for="popup-Aele"><div class="btn-close">閉じる</div></label>
@@ -83,14 +84,14 @@
           <div>
             <label for="popup-Bele"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELB1 shadow"></div></label>
+              <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELB1 shadow iconABC"></div></label>
             <input type="checkbox" id="popup-Bele">
             <div class="popup">
               <label for="popup-Bele" class="icon-close">×</label>
               <div class="popup-content">
                 <!-- ポップアップの中身 -->
                 <h2>一般教育棟C棟のエレベーター</h2>
-                <img src="img/pankyo/Bele.JPG" width="500" height="375" alt="一般教育棟B棟のエレベーター">
+                <img src="img/pankyo/Bele.JPG" class="img1" alt="一般教育棟B棟のエレベーター">
                 <!-- ./ポップアップの中身　ここまで -->
               </div>
               <label for="popup-Bele"><div class="btn-close">閉じる</div></label>
@@ -99,39 +100,30 @@
           <div>
             <label for="popup-BtoiletGirl"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB1_1 shadow"></div></label>
+              <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB1_1 shadow iconABC"></div></label>
             <input type="checkbox" id="popup-BtoiletGirl">
             <div class="popup">
               <label for="popup-BtoiletGirl" class="icon-close">×</label>
               <div class="popup-content">
                 <!-- ポップアップの中身 -->
-                <h2>一般教育棟B棟多目的トイレ</h2><br>女子トイレ内にあります<br>
+                <h2>一般教育棟B棟多目的トイレ</h2>
+                <p>左は女子トイレ内，右は男子トイレ内の多目的トイレです。</p>  
+                <div class="popup-flex">    
                 <img src="img/pankyo/BtoiletGirl.JPG" class="img2" alt="一般教育棟B棟の女子トイレ">
-                <!-- ./ポップアップの中身　ここまで -->
+                <img src="img/pankyo/BtoiletBoy.JPG" class="img1" alt="一般教育棟B棟の男子トイレ">
+                    
+                  <!-- ./ポップアップの中身　ここまで -->
+                </div>
               </div>
               <label for="popup-BtoiletGirl"><div class="btn-close">閉じる</div></label>
             </div>
           </div>
-          <div>
-            <label for="popup-BtoiletBoy"><div class="btn-open">
-              <!-- 画像 -->
-              <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB1_2 shadow"></div></label>
-            <input type="checkbox" id="popup-BtoiletBoy">
-            <div class="popup">
-              <label for="popup-BtoiletBoy" class="icon-close">×</label>
-              <div class="popup-content">
-                <!-- ポップアップの中身 -->
-                <h2>一般教育棟B棟の多目的トイレ</h2><br>男子トイレ内にあります<br>
-                <img src="img/pankyo/BtoiletBoy.JPG" class="img1" alt="一般教育棟B棟の男子トイレ">
-                <!-- ./ポップアップの中身　ここまで -->
-              </div>
-              <label for="popup-BtoiletBoy"><div class="btn-close">閉じる</div></label>
-            </div>
-          </div>
+
+         
           <div>
             <label for="popup-Ctoilet"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="absoluteTC1 shadow"></div></label>
+              <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="absoluteTC1 shadow iconABC"></div></label>
             <input type="checkbox" id="popup-Ctoilet">
             <div class="popup">
               <label for="popup-Ctoilet" class="icon-close">×</label>
@@ -144,10 +136,11 @@
               <label for="popup-Ctoilet"><div class="btn-close">閉じる</div></label>
             </div>
           </div>         
+
           <div>
             <label for="popup-ANslope"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/slopeauto.png" width="30" height="20" alt="A棟入口のスロープ" class="absoluteANslope shadow"></div></label>
+              <img src="img/icon/slopeauto.png" width="30" height="20" alt="A棟入口のスロープ" class="absoluteANslope shadow iconABC"></div></label>
             <input type="checkbox" id="popup-ANslope">
             <div class="popup">
               <label for="popup-ANslope" class="icon-close">×</label>
@@ -165,10 +158,11 @@
               <label for="popup-ANslope"><div class="btn-close">閉じる</div></label>
             </div>
           </div>
+
           <div>
             <label for="popup-AEslope"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/slopemanu.png" width="30" height="20" alt="A棟こももショップ入口のスロープ" class="absoluteAEslope shadow"></div></label>
+              <img src="img/icon/slopemanu.png" width="30" height="20" alt="A棟こももショップ入口のスロープ" class="absoluteAEslope shadow iconABC"></div></label>
             <input type="checkbox" id="popup-AEslope">
             <div class="popup">
               <label for="popup-AEslope" class="icon-close">×</label>
@@ -187,10 +181,11 @@
               <label for="popup-AEslope"><div class="btn-close">閉じる</div></label>
             </div>
           </div>          
+
           <div>
             <label for="popup-AWslope"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/slopeauto.png" width="30" height="20" alt="A棟西口のスロープ" class="absoluteAWslope shadow"></div></label>
+              <img src="img/icon/slopeauto.png" width="30" height="20" alt="A棟西口のスロープ" class="absoluteAWslope shadow iconABC"></div></label>
             <input type="checkbox" id="popup-AWslope">
             <div class="popup">
               <label for="popup-AWslope" class="icon-close">×</label>
@@ -209,10 +204,11 @@
               <label for="popup-AWslope"><div class="btn-close">閉じる</div></label>
             </div>
           </div>         
+
           <div>
             <label for="popup-BWslope"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/slopeauto.png" width="30" height="20" alt="B棟西口のスロープ" class="absoluteBWslope shadow"></div></label>
+              <img src="img/icon/slopeauto.png" width="30" height="20" alt="B棟西口のスロープ" class="absoluteBWslope shadow iconABC"></div></label>
             <input type="checkbox" id="popup-BWslope">
             <div class="popup">
               <label for="popup-BWslope" class="icon-close">×</label>
@@ -230,10 +226,11 @@
               <label for="popup-BWslope"><div class="btn-close">閉じる</div></label>
             </div>
           </div>                    
+
           <div>
             <label for="popup-CWslope"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/slopemanu.png" width="30" height="20" alt="C棟西口のスロープ" class="absoluteCWslope shadow"></div></label>
+              <img src="img/icon/slopemanu.png" width="30" height="20" alt="C棟西口のスロープ" class="absoluteCWslope shadow iconABC"></div></label>
             <input type="checkbox" id="popup-CWslope">
             <div class="popup">
               <label for="popup-CWslope" class="icon-close">×</label>
@@ -255,7 +252,7 @@
           <div>
             <label for="popup-CEslope"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/slopemanu.png" width="30" height="20" alt="C棟東口のスロープ" class="absoluteCEslope shadow"></div></label>
+              <img src="img/icon/slopemanu.png" width="30" height="20" alt="C棟東口のスロープ" class="absoluteCEslope shadow iconABC"></div></label>
             <input type="checkbox" id="popup-CEslope">
             <div class="popup">
               <label for="popup-CEslope" class="icon-close">×</label>
@@ -271,7 +268,7 @@
           <div>
             <label for="popup-CSslope"><div class="btn-open">
               <!-- 画像 -->
-              <img src="img/icon/slopeauto.png" width="30" height="20" alt="C棟正面のスロープ" class="absoluteCSslope shadow"></div></label>
+              <img src="img/icon/slopeauto.png" width="30" height="20" alt="C棟正面のスロープ" class="absoluteCSslope shadow iconABC"></div></label>
             <input type="checkbox" id="popup-CSslope">
             <div class="popup">
               <label for="popup-CSslope" class="icon-close">×</label>
@@ -301,26 +298,20 @@
         <div>
           <label for="popup-Aele"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELA2 shadow"></div></label>
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELA2 shadow iconABC"></div></label>
           <input type="checkbox" id="popup-Aele">
         </div>
         <div>
           <label for="popup-Bele"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELB2 shadow"></div></label>
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELB2 shadow iconABC"></div></label>
           <input type="checkbox" id="popup-Bele">
         </div>
         <div>
           <label for="popup-BtoiletGirl"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB2_1 shadow"></div></label>
+            <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB2_1 shadow iconABC"></div></label>
           <input type="checkbox" id="popup-BtoiletGirl">
-        </div>
-        <div>
-          <label for="popup-BtoiletBoy"><div class="btn-open">
-            <!-- 画像 -->
-            <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB2_2 shadow"></div></label>
-          <input type="checkbox" id="popup-BtoiletBoy">
         </div>
       </div>
     </section>
@@ -332,26 +323,20 @@
         <div>
           <label for="popup-Aele"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELA3 shadow"></div></label>
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELA3 shadow iconABC"></div></label>
           <input type="checkbox" id="popup-Aele">
         </div>
         <div>
           <label for="popup-Bele"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELB3 shadow"></div></label>
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELB3 shadow iconABC"></div></label>
           <input type="checkbox" id="popup-Bele">
         </div>
         <div>
           <label for="popup-BtoiletGirl"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB3_1 shadow"></div></label>
+            <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB3_1 shadow iconABC"></div></label>
           <input type="checkbox" id="popup-BtoiletGirl">
-        </div>
-        <div>
-          <label for="popup-BtoiletBoy"><div class="btn-open">
-            <!-- 画像 -->
-            <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB3_2 shadow"></div></label>
-          <input type="checkbox" id="popup-BtoiletBoy">
         </div>
       </div>
     </section>
@@ -363,26 +348,20 @@
         <div>
           <label for="popup-Aele"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELA4 shadow"></div></label>
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELA4 shadow iconABC"></div></label>
           <input type="checkbox" id="popup-Aele">
         </div>
         <div>
           <label for="popup-Bele"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELB4 shadow"></div></label>
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteELB4 shadow iconABC"></div></label>
           <input type="checkbox" id="popup-Bele">
         </div>
         <div>
           <label for="popup-BtoiletGirl"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB4_1 shadow"></div></label>
+            <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB4_1 shadow iconABC"></div></label>
           <input type="checkbox" id="popup-BtoiletGirl">
-        </div>
-        <div>
-          <label for="popup-BtoiletBoy"><div class="btn-open">
-            <!-- 画像 -->
-            <img src="img/icon/toilet.png" width="20" height="20" alt="多目的トイレ" class="absoluteTB4_2 shadow"></div></label>
-          <input type="checkbox" id="popup-BtoiletBoy">
         </div>
       </div>
     </section>
@@ -397,7 +376,7 @@
         <div>
           <label for="popup-Dele"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteDele1 shadow"></div></label>
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteDele1 shadow iconDE"></div></label>
           <input type="checkbox" id="popup-Dele">
           <div class="popup">
             <label for="popup-Dele" class="icon-close">×</label>
@@ -413,7 +392,7 @@
         <div>
           <label for="popup-Dtoilet"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/toilet.png" width="21" height="20" alt="多目的トイレ" class="absoluteDtoilet1 shadow"></div></label>
+            <img src="img/icon/toilet.png" width="21" height="20" alt="多目的トイレ" class="absoluteDtoilet1 shadow iconDE"></div></label>
           <input type="checkbox" id="popup-Dtoilet">
           <div class="popup">
             <label for="popup-Dtoilet" class="icon-close">×</label>
@@ -430,7 +409,7 @@
         <div>
           <label for="popup-DWslope"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/slopeauto.png" width="30" height="20" alt="D棟西口のスロープ" class="absoluteDWslope shadow">
+            <img src="img/icon/slopeauto.png" width="30" height="20" alt="D棟西口のスロープ" class="absoluteDWslope shadow iconDE">
           </div></label>
           <input type="checkbox" id="popup-DWslope">
           <div class="popup">
@@ -438,11 +417,6 @@
             <div class="popup-content">
               <!-- ポップアップの中身 -->
               <h2>D棟西口のスロープ(自動扉)</h2>
-              <p>スロープの角度</p>
-              <div class="section3"><table><tbody >
-                    <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
-                    <tr><td>°</td><td>°</td><td>°</td><td>°</td></tr>
-                  </tbody></table></div>
               <img src="img/pankyo/DWslope.JPG" class="img1"  alt="D棟西口のスロープ">
               <!-- ./ポップアップの中身　ここまで -->
             </div>
@@ -453,7 +427,7 @@
         <div>
           <label for="popup-DNslope"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/slopeauto.png" width="30" height="20" alt="D棟北口のスロープ" class="absoluteDNslope shadow"></div></label>
+            <img src="img/icon/slopeauto.png" width="30" height="20" alt="D棟北口のスロープ" class="absoluteDNslope shadow iconDE"></div></label>
           <input type="checkbox" id="popup-DNslope">
           <div class="popup">
             <label for="popup-DNslope" class="icon-close">×</label>
@@ -475,7 +449,7 @@
         <div>
           <label for="popup-EWslope"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/slopemanu.png" width="30" height="20" alt="E棟西口のスロープ" class="absoluteEWslope shadow"></div></label>
+            <img src="img/icon/slopemanu.png" width="30" height="20" alt="E棟西口のスロープ" class="absoluteEWslope shadow iconDE"></div></label>
           <input type="checkbox" id="popup-EWslope">
           <div class="popup">
             <label for="popup-EWslope" class="icon-close">×</label>
@@ -497,7 +471,7 @@
         <div>
           <label for="popup-EEslope"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/slopemanu.png" width="30" height="20" alt="E棟東口のスロープ" class="absoluteEEslope shadow"></div></label>
+            <img src="img/icon/slopemanu.png" width="30" height="20" alt="E棟東口のスロープ" class="absoluteEEslope shadow iconDE"></div></label>
           <input type="checkbox" id="popup-EEslope">
           <div class="popup">
             <label for="popup-EEslope" class="icon-close">×</label>
@@ -525,13 +499,13 @@
       <div>
         <label for="popup-Dele"><div class="btn-open">
           <!-- 画像 -->
-          <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteDele2 shadow"></div></label>
+          <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteDele2 shadow iconDE"></div></label>
         <input type="checkbox" id="popup-Dele">
       </div>
       <div>
         <label for="popup-Dtoilet"><div class="btn-open">
           <!-- 画像 -->
-          <img src="img/icon/toilet.png" width="21" height="20" alt="多目的トイレ" class="absoluteDtoilet2 shadow"></div></label>
+          <img src="img/icon/toilet.png" width="21" height="20" alt="多目的トイレ" class="absoluteDtoilet2 shadow iconDE"></div></label>
         <input type="checkbox" id="popup-Dtoilet">
       </div>
     </div>
@@ -544,13 +518,13 @@
         <div>
           <label for="popup-Dele"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteDele3 shadow"></div></label>
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteDele3 shadow iconDE"></div></label>
           <input type="checkbox" id="popup-Dele">
         </div>        
         <div>
           <label for="popup-Dtoilet"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/toilet.png" width="21" height="20" alt="多目的トイレ" class="absoluteDtoilet3 shadow"></div></label>
+            <img src="img/icon/toilet.png" width="21" height="20" alt="多目的トイレ" class="absoluteDtoilet3 shadow iconDE"></div></label>
           <input type="checkbox" id="popup-Dtoilet">
         </div>
       </div>
@@ -563,10 +537,10 @@
         <div>
           <label for="popup-Dele"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteDele4 shadow"></div></label>
+            <img src="img/icon/elevator.png" width="40" height="40" alt="エレベーター" class="absoluteDele4 shadow iconDE"></div></label>
           <input type="checkbox" id="popup-Dele">
         </div>
-        <img src="img/icon/toilet.png" width="21" height="20" alt="多目的トイレ" class="absoluteDtoilet4 shadow">
+        <img src="img/icon/toilet.png" width="21" height="20" alt="多目的トイレ" class="absoluteDtoilet4 shadow iconDE">
       </div>
     </section>
 
@@ -577,7 +551,7 @@
         <div>
           <label for="popup-Dele"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteDele5 shadow"></div></label>
+            <img src="img/icon/elevator.png" width="40" height="40" alt="エレベーター" class="absoluteDele5 shadow iconDE"></div></label>
           <input type="checkbox" id="popup-Dele">
         </div>      
       </div>
@@ -590,14 +564,14 @@
         <div>
           <label for="popup-Dele"><div class="btn-open">
             <!-- 画像 -->
-            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="absoluteDele6 shadow"></div></label>
+            <img src="img/icon/elevator.png" width="30" height="30" alt="エレベーター" class="absoluteDele6 shadow iconDE"></div></label>
           <input type="checkbox" id="popup-Dele">
         </div>
       </div>
     </section>
     
     <footer class="footer1">
-        <p><a href="#">TOPへ</a></p>
+        <p><a href="#" class="top_button">上へ</a></p>
         <p>&copy okayama-university.ac.jp</p>
     </footer>
   </div>

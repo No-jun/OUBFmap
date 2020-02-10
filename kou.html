@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+  <title>工学部</title>
+</head>
+
+<body class="body1">
+  <div>
+    <header class="header1">
+      <h1>工学部</h1>
+    </header>
+
+    <section>
+      <h3 class="section1">マップ上のアイコン(AEDを除く)をタップすると，その場所の写真をみることができます。</h3>
+      <div class="section3"><table>
+          <thead>
+            <tr><th>アイコン</th> <th>説明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><img src="img/icon/AED.png" width="50" height="40"alt="AED"></td>
+              <td>AED</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/elevator.png" width="50" height="50" alt="エレベーター"></td>
+              <td>エレベーター</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/toilet.png" width="50" height="50" alt="多目的トイレ"></td>
+              <td>多目的トイレ</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/slopeauto.png" width="60" height="40" alt="スロープ自動扉"></td>
+              <td>スロープ自動扉</td>
+            </tr>
+            <tr>
+              <td><img src="img/icon/slopemanu.png" width="60" height="40" alt="スロープ手動扉"></td>
+              <td>スロープ手動扉</td>
+            </tr>
+          </tbody></table>
+      </div>
+    </section>
+
+    <ul class="section1">
+      <h2>エリア</h2>
+      <li><a href="#blockKou1_1" class="link_button">工学部 1号館 1F</a></li>
+      <li><a href="#blockKou1_2" class="link_button">工学部 1号館 2F</a></li>
+      <li><a href="#blockKou1_3" class="link_button">工学部 1号館 3F</a></li>
+      <!-- <li><a href="#blockKou2_1" class="link_button">工学部 2号館 1F</a></li>
+      <li><a href="#blockKou2_2" class="link_button">工学部 2号館 2F</a></li>
+      <li><a href="#blockKou2_3" class="link_button">工学部 2号館 3F</a></li>
+      <li><a href="#blockKou2_4" class="link_button">工学部 2号館 4F</a></li> -->
+      <li><a href="#blockKou4_1" class="link_button">工学部 4号館 1F</a></li>
+      <li><a href="#blockKou4_2" class="link_button">工学部 4号館 2F</a></li>
+      <li><a href="#blockKou4_4" class="link_button">工学部 4号館 4F</a></li>
+      <li><a href="#blockKou5_1" class="link_button">工学部 5号館 1F</a></li>
+      <li><a href="#blockKou5_2" class="link_button">工学部 5号館 2F</a></li>
+      <li><a href="#blockKou6_1" class="link_button">工学部 6号館 1F</a></li>
+      <li><a href="#blockKou15_1" class="link_button">工学部 旧15号館</a></li>
+    </ul>
+
+    <section class="section1">
+      <h2 id="blockKou1_1">1号館 1F</h2>     
+      <div class="relative_kou">
+        <img src="img/kou/kou1_1.png" width="600" height="500" alt="1Fマップの画像です" class="map1">
+
+        <div>
+          <label for="popup-kou1ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="kou1ele1 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou1ele">
+          <div class="popup">
+            <label for="popup-kou1ele" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>エレベーター</h2>
+              <img src="img/kou/kou1_ele.jpg" class="img1" alt="エレベーター">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou1ele"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-kou1t"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="kou1t1 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou1t">
+          <div class="popup">
+            <label for="popup-kou1t" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>多目的トイレ</h2>
+              <p></p>
+              <img src="img/kou/kou1_t.jpg" class="img1" alt="多目的トイレ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou1t"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+      
+        <div>
+          <label for="popup-kou1ESslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="kou1ESslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou1ESslope">
+          <div class="popup">
+            <label for="popup-Kou1ESslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>1号館の南東入口(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>9.4°</td><td>9.4°</td><td>9.7°</td><td>9.5°</td></tr>
+              </tbody></table></div>
+              <img src="img/kou/kou1_Eslope.jpg" class="img1" alt="南東入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou1ESslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-kou1WSslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="kou1WSslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou1WSslope">
+          <div class="popup">
+            <label for="popup-Kou1WSslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>1号館の南西入口(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>5°</td><td>4.8°</td><td>4.6°</td><td>4.8°</td></tr>
+              </tbody></table></div>
+              <img src="img/kou/kou1_WSslope.jpg" class="img1" alt="南西入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou1WSslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-kou1WNslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="kou1WNslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou1WNslope">
+          <div class="popup">
+            <label for="popup-Kou1WNslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>1号館の北西入口(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>6.1°</td><td>6.3°</td><td>5.8°</td><td>6.1°</td>>
+              </tbody></table></div>
+              <img src="img/kou/kou1_WNslope.jpg" class="img1" alt="北西入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou1WNslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-kou1Nslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="kou1Nslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou1Nslope">
+          <div class="popup">
+            <label for="popup-kou1Nslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>1号館の北側入口(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>4.8°</td><td>4.8°</td><td>4.5°</td><td>4.7°</td></tr>
+              </tbody></table></div>
+              <img src="img/kou/kou1_Nslope.jpg" class="img1" alt="北側入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou1Nslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-kou1Sslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="25" height="25" alt="自動扉" class="kou1Sslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou1Sslope">
+          <div class="popup">
+            <label for="popup-kou1Sslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>1号館の北側入口(自動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>3.3°</td><td>3.3°</td><td>2.1°</td><td>2.9°</td></tr>
+              </tbody></table></div>
+              <img src="img/kou/kou1_Sslope.jpg" class="img1" alt="北側入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou1Sslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+        
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="blockKou1_2">1号館 2F</h2>     
+      <div class="relative_kou">
+        <img src="img/kou/kou1_2.png" width="600" height="500" alt="2Fマップの画像です" class="map1">
+
+        <div>
+          <label for="popup-kou1ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="kou1ele2 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou1ele">
+        </div>
+        <div>
+          <label for="popup-kou1t"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="kou1t2 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou1t">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="blockKou1_3">1号館 3F</h2>     
+      <div class="relative_kou">
+        <img src="img/kou/kou1_3.png" width="600" height="500" alt="3Fマップの画像です" class="map1">
+
+        <div>
+          <label for="popup-kou1ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="kou1ele3 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou1ele">
+        </div>
+        <div>
+          <label for="popup-kou1t"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="kou1t3 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou1t">
+        </div>
+        
+      </div>
+    </section>
+
+
+    <section class="section1">
+      <h2 id="blockKou4_1">4号館 1F</h2>     
+      <div class="relative_kou">
+        <img src="img/kou/kou4_1.png" width="600" height="500" alt="1Fマップの画像です" class="map1">
+
+        <div>
+          <label for="popup-kou4ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="kou4ele1 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou4ele">
+          <div class="popup">
+            <label for="popup-kou4ele" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>エレベーター</h2>
+              <img src="img/kou/kou4_ele.jpg" class="img1" alt="エレベーター">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou4ele"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-kou4t"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="kou4t1 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou4t">
+          <div class="popup">
+            <label for="popup-kou4t" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>多目的トイレ</h2>
+              <p></p>
+              <img src="img/kou/kou4_1t.jpg" class="img1" alt="多目的トイレ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou4t"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+      
+        <div>
+          <label for="popup-kou4Sslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="kou4Sslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou4Sslope">
+          <div class="popup">
+            <label for="popup-kou4Sslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>4号館の南入口(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>6.2°</td><td>7°</td><td>6.8°</td><td>6.7°</td></tr>
+              </tbody></table></div>
+              <img src="img/kou/kou4_Sslope.jpg" class="img1" alt="南入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou4Sslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+        
+        <div>
+          <label for="popup-kou4Nslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="kou4Nslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou4Nslope">
+          <div class="popup">
+            <label for="popup-kou4Nslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>4号館の北入口(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>6.2°</td><td>5.7°</td><td>5.7°</td><td>5.9°</td></tr>
+              </tbody></table></div>
+              <img src="img/kou/kou4_Nslope.jpg" class="img1" alt="南入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou4Nslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="blockKou4_2">4号館 2F</h2>     
+      <div class="relative_kou">
+        <img src="img/kou/kou4_2.png" width="600" height="500" alt="2Fマップの画像です" class="map1">
+        <div>
+          <label for="popup-kou4ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="kou4ele2 shadow icon_DE"></div></label>
+          <input type="checkbox" id="popup-kou4ele">
+        </div>
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="blockKou4_4">4号館 4F</h2>     
+      <div class="relative_kou">
+        <img src="img/kou/kou4_4.png" width="600" height="500" alt="4Fマップの画像です" class="map1">
+        <div>
+          <label for="popup-kou4ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="kou4ele4 shadow icon_DE"></div></label>
+          <input type="checkbox" id="popup-kou4ele">
+        </div>
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="blockKou5_1">5号館 1F</h2>     
+      <div class="relative_kou">
+        <img src="img/kou/kou5_1.png" width="600" height="500" alt="1Fマップの画像です" class="map1">
+
+        <div>
+          <label for="popup-kou5ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="kou5ele1 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou5ele">
+          <div class="popup">
+            <label for="popup-kou5ele" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>エレベーター</h2>
+              <img src="img/kou/kou5_ele.jpg" class="img1" alt="エレベーター">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou5ele"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-kou5t"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="kou5t1 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou5t">
+          <div class="popup">
+            <label for="popup-kou5t" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>多目的トイレ</h2>
+              <p></p>
+              <img src="img/kou/kou5_t.jpg" class="img1" alt="多目的トイレ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou5t"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+      
+        <div>
+          <label for="popup-kou5WSslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="kou5WSslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou5WSslope">
+          <div class="popup">
+            <label for="popup-Kou5WSslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>5号館の第15講義室入口(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>4.5°</td><td>4.5°</td><td>4.5°</td><td>4.5°</td></tr>
+              </tbody></table></div>
+              <img src="img/kou/kou5_WSslope.jpg" class="img1" alt="スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou5WSslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+        
+        <div>
+          <label for="popup-kou5WNslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopeauto.png" width="25" height="25" alt="自動扉" class="kou5WNslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou5WNslope">
+          <div class="popup">
+            <label for="popup-kou5WNslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>5号館の北西側入口(自動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>4.9°</td><td>3.5°</td><td>4.6°</td><td>4.3°</td></tr>
+              </tbody></table></div>
+              <img src="img/kou/kou5_WNslope.jpg" class="img1" alt="北西側入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou5WNslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="blockKou5_2">5号館 2F</h2>     
+      <div class="relative_kou">
+        <img src="img/kou/kou5_2.png" width="600" height="500" alt="2Fマップの画像です" class="map1">
+        <div>
+          <label for="popup-kou5ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="kou5ele2 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou5ele">
+        </div>
+
+        <div>
+          <label for="popup-kou5t"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="kou5t2 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou5t">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="blockKou6_1">6号館 1F</h2>     
+      <div class="relative_kou">
+        <img src="img/kou/kou6_1.png" width="600" height="500" alt="1Fマップの画像です" class="map1">
+
+        <div>
+          <label for="popup-kou6ele"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/elevator.png" width="25" height="25" alt="エレベーター" class="kou6ele1 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou6ele">
+          <div class="popup">
+            <label for="popup-kou6ele" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>エレベーター</h2>
+              <img src="img/kou/kou6_ele.jpg" class="img1" alt="エレベーター">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou6ele"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-kou6t"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="kou6t1 shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou6t">
+          <div class="popup">
+            <label for="popup-kou6t" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>多目的トイレ</h2>
+              <p></p>
+              <img src="img/kou/kou6_t.jpg" class="img1" alt="多目的トイレ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou6t"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+      
+        <div>
+          <label for="popup-kou6Nslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="kou6Nslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou6Nslope">
+          <div class="popup">
+            <label for="popup-kou6Nslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>6号館北側入口(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>5.6°</td><td>5.7°</td><td>5.5°</td><td>5.9°</td></tr>
+              </tbody></table></div>
+              <img src="img/kou/kou6_Nslope.jpg" class="img1" alt="スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou6Nslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+        
+        <div>
+          <label for="popup-kou6Wslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="kou6Wslope shadow icon_kou"></div></label>
+          <input type="checkbox" id="popup-kou6Wslope">
+          <div class="popup">
+            <label for="popup-kou6Wslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>6号館の西側入口(手動扉)</h2>
+              <!-- <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>3.8°</td><td>4.2°</td><td>4.5°</td><td>4.2°</td></tr>
+              </tbody></table></div> -->
+              <img src="img/kou/kou6_Wslope.jpg" class="img1" alt="西側入口スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou6Wslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section1">
+      <h2 id="blockKou15_1">旧15号館</h2>     
+      <div class="relative_kou">
+        <img src="img/kou/kou_old15.png" width="600" height="500" alt="15号館のマップの画像です" class="map1">
+
+        <div>
+          <label for="popup-kou15t"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/toilet.png" width="25" height="25" alt="多目的トイレ" class="kou15t shadow icon_DE"></div></label>
+          <input type="checkbox" id="popup-kou15t">
+          <div class="popup">
+            <label for="popup-kou15t" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>多目的トイレ</h2>
+              <p></p>
+              <img src="img/kou/kou15_t.jpg" class="img1" alt="多目的トイレ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou15t"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+
+      
+        <div>
+          <label for="popup-kou15Nslope"><div class="btn-open">
+            <!-- 画像 -->
+            <img src="img/icon/slopemanu.png" width="25" height="25" alt="手動扉" class="kou15Nslope shadow icon_DE"></div></label>
+          <input type="checkbox" id="popup-kou15Nslope">
+          <div class="popup">
+            <label for="popup-kou15Nslope" class="icon-close">×</label>
+            <div class="popup-content">
+              <!-- ポップアップの中身 -->
+              <h2>旧15号館北側入口(手動扉)</h2>
+              <p>スロープの角度</p>
+              <div class="section3"><table><tbody >
+                <tr><th>上部</th><th>中部</th><th>下部</th><th>平均</th></tr>
+                <tr><td>6°</td><td>6.2°</td><td>6.6°</td><td>6.3°</td></tr>
+              </tbody></table></div>
+              <img src="img/kou/kou15_Nslope.jpg" class="img1" alt="スロープ">
+              <!-- ./ポップアップの中身　ここまで -->
+            </div>
+            <label for="popup-kou15Nslope"><div class="btn-close">閉じる</div></label>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+
+    <footer class="footer1">
+        <p><a href="#" class="top_button">上へ</a></p>
+        <p>&copy okayama-university.ac.jp</p>
+    </footer>
+  </div>
+</body>
+</html>
